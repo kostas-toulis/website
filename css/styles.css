@@ -79,7 +79,7 @@ html {
 
 body {
 	background: #fafafa;
-	background-image: url("images/bg.png");
+/*	background-image: url("images/bg.png"); 10t NOT */
 	font-family: 'Roboto Slab', serif;
 	font-size: 18px;
 	color: #727272;
@@ -331,7 +331,7 @@ h6 {
 -----------------------------------------*/
 header {
 	background: #f8f8f8;
-  background-image: url(https://manoloudis.com/oreo/images/bg-triangle-mosaic.png) !important;
+  /* background-image: url(https://manoloudis.com/oreo/images/bg-triangle-mosaic.png) !important;  10t NOT */
   background-position: top left;
   background-repeat: repeat;
 }
@@ -792,7 +792,7 @@ object {
 }
 
 .dta-section {
-	background: url(../images/toulis_logo_parallax.svg) no-repeat center fixed;
+	background: url(../images/toulis-logo-parallax.svg) no-repeat center fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
