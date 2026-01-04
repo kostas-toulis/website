@@ -288,8 +288,8 @@ h6 {
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: none;
-	border-radius: 3px;
-	padding: 15px 30px;
+	border-radius: 25px;
+	padding: 15px 40px;
 	border: 0;
 	margin: 5px;
 	line-height: inherit;
@@ -318,7 +318,7 @@ h6 {
 }
 
 .section5 {
-	background: #edf0e6;
+	background: #f0eee6;
 }
 
 .color-overlay {
@@ -334,7 +334,7 @@ h6 {
    4.2.1 BASIC STYLES
 -----------------------------------------*/
 header {
-	background: #e6f0ee;
+	background: #f8f7f2;
 	/* background-image: url(https://manoloudis.com/oreo/images/bg-triangle-mosaic.png) !important;  10t NOT */
 	background-position: top left;
 	background-repeat: repeat;
@@ -409,7 +409,7 @@ header .home-screenshot {
 /* STICKY NAVIGATION */
 .sticky-navigation {
 	min-height: 75px;
-	background: #92A0A6;
+	background: #7fabb4;
 	-webkit-backface-visibility: hidden;
 	border: 0;
 	-webkit-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
@@ -785,7 +785,7 @@ object {
    4.9.1 CALL TO ACTION WITH TEXT/BUTTON
 -----------------------------------------*/
 .cta-section {
-	background: url(../images/bg-image-2.jpg) no-repeat center fixed;
+	background: #7fabb4;
 	-webkit-background-size: cover;
 	background-size: cover;
 }

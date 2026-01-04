@@ -28,13 +28,13 @@ a {
 }
 
 .standard-button {
-  background: #233038;
+  background: #7fabb4;
   color: #ffffff;
 }
 
 .standard-button:hover {
   color: #ffffff;
-  background: #3a4a55;
+  background: #6a9aa3;
 }
 
 .secondary-button:hover {
