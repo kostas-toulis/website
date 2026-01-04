@@ -43,14 +43,16 @@ a {
 }
 
 .sticky-navigation .main-navigation .current a {
-  color: #fff !important;
-  border-bottom: 3px solid #fff;
+  color: #7fabb4 !important;
+  font-weight: 700;
+  border-bottom: 3px solid #7fabb4;
   transition: background .15s cubic-bezier(.33, .66, .66, 1);
   text-decoration: none;
 }
 
 .sticky-navigation .navbar-nav>li>a:hover {
-  color: #008ed6;
+  color: #7fabb4;
+  font-weight: 700;
 }
 
 .feature-list-1 li .icon-container {

@@ -338,6 +338,7 @@ header {
 	/* background-image: url(https://manoloudis.com/oreo/images/bg-triangle-mosaic.png) !important;  10t NOT */
 	background-position: top left;
 	background-repeat: repeat;
+	padding-bottom: 80px;
 }
 
 header .vertical-registration-form {
@@ -506,6 +507,7 @@ header .home-screenshot {
 	margin-top: 0;
 	text-align: center;
 	float: left;
+	vertical-align: top;
 }
 
 .feature-list-2 li .details {
@@ -514,9 +516,9 @@ header .home-screenshot {
 
 .feature-list-2 li .details p {
 	margin-top: 0;
-	margin-bottom: 8px;
+	margin-bottom: 4px;
 	background: #ffffff;
-	padding: 10px 15px;
+	padding: 8px 15px;
 	border-radius: 5px;
 	line-height: 32px;
 }
@@ -532,6 +534,10 @@ header .home-screenshot {
 .feature {
 	margin-top: 40px;
 	margin-bottom: 35px;
+}
+
+.feature:first-child {
+	margin-top: 0;
 }
 
 .feature .icon {
@@ -804,10 +810,11 @@ object {
 
 .dta-section {
 	background: #f8f7f2;
+	margin-bottom: 60px;
 }
 
 .dta-section .color-overlay {
-	background: url(../images/bg-image-4.jpg) no-repeat center;
+	background: url(../images/bg-image-4.jpg) no-repeat center fixed;
 	background-size: cover;
 	width: 80%;
 	margin: 0 auto;
@@ -817,10 +824,11 @@ object {
 
 .eta-section {
 	background: #f8f7f2;
+	margin-bottom: 60px;
 }
 
 .eta-section .color-overlay {
-	background: url(../images/toulis-logo-parallax.svg) no-repeat center;
+	background: url(../images/toulis-logo-parallax.svg) no-repeat center fixed;
 	background-size: cover;
 	width: 80%;
 	margin: 0 auto;
