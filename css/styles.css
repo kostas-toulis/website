@@ -78,7 +78,7 @@ html {
 }
 
 body {
-	background: #fafafa;
+	background: #f8f7f2;
 /*	background-image: url("images/bg.png"); 10t NOT */
 	font-family: 'Roboto Slab', serif;
 	font-size: 18px;
@@ -330,7 +330,7 @@ h6 {
    4.2.1 BASIC STYLES
 -----------------------------------------*/
 header {
-	background: #f8f8f8;
+	background: #f8f7f2;
   /* background-image: url(https://manoloudis.com/oreo/images/bg-triangle-mosaic.png) !important;  10t NOT */
   background-position: top left;
   background-repeat: repeat;
@@ -954,7 +954,7 @@ background: #fff;
 }
 
 .society-row {
-background: #fafafa;
+background: #f8f7f2;
 width: 100%;
 margin: 0 auto;
 }
