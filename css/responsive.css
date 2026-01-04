@@ -5,92 +5,95 @@ RESPONSIVE FIXES
 -----------------------------------------*/
 
 
- @media (max-width: 991px) {
-     
-     .pull-right, 
-     .pull-left {
-         float: none !important;
-         margin: auto;
-     }
-     
-     .text-left,
-     .text-right {
-         
-         text-align: center;
-     }
-     
-     .side-screenshot {
-         margin-bottom: 40px;
-     }
-     
-     header .home-screenshot {
-        margin-top: 0;
-    }
-     
-     .button-container .btn {
-        margin: 10px;
-    }
-     
-     .feature-list-1 {
-         margin-top: 0;
-     }
-     
-     .feature-list-1 li .icon-container {
-         float: left !important;
-     }
-     
-     .feature-list-1 li p {
-         text-align: left !important;
-     }
-     .feature-list-2 li .icon-container {
-         margin-right: 0;
-         margin: auto;
-         margin-bottom: 10px;
-     }
-     
-     header .vertical-registration-form {
-         margin-top: 10px;
-        
-     }
-     
-     .intro-section {
-         margin-bottom: 50px;
-         margin-top: 0;
-     }
- }
- 
- 
-@media (min-width: 768px) and (max-width: 991px) { 
-    
-    html {
-        font-size: 90%;
-    }
-    
-    .sticky-navigation .navbar-header {
-        width: 100%;
-        position: relative;
-        text-align: center;
-        margin-top: 10px;
-    }
-    .sticky-navigation .navbar-header a {
-        float: none !important;
-    }
-     
-    .feature-list-1 {
-         float: left;
-         font-size: 16px;
-         line-height: 25px;
-     }
-    .feature-list-1 li p {
-         font-size: 16px;
-         line-height: 25px;
-     }
-    
+@media (max-width: 991px) {
+
+	.pull-right,
+	.pull-left {
+		float: none !important;
+		margin: auto;
+	}
+
+	.text-left,
+	.text-right {
+
+		text-align: center;
+	}
+
+	.side-screenshot {
+		margin-bottom: 40px;
+	}
+
+	header .home-screenshot {
+		margin-top: 0;
+	}
+
+	.button-container .btn {
+		margin: 10px;
+	}
+
+	.feature-list-1 {
+		margin-top: 0;
+	}
+
+	.feature-list-1 li .icon-container {
+		float: left !important;
+	}
+
+	.feature-list-1 li p {
+		text-align: left !important;
+	}
+
+	.feature-list-2 li .icon-container {
+		margin-right: 0;
+		margin: auto;
+		margin-bottom: 10px;
+	}
+
+	header .vertical-registration-form {
+		margin-top: 10px;
+
+	}
+
+	.intro-section {
+		margin-bottom: 50px;
+		margin-top: 0;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	html {
+		font-size: 90%;
+	}
+
+	.sticky-navigation .navbar-header {
+		width: 100%;
+		position: relative;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.sticky-navigation .navbar-header a {
+		float: none !important;
+	}
+
+	.feature-list-1 {
+		float: left;
+		font-size: 16px;
+		line-height: 25px;
+	}
+
+	.feature-list-1 li p {
+		font-size: 16px;
+		line-height: 25px;
+	}
+
 }
 
 
 @media(max-width:767px) {
-    
+
 	html {
 		font-size: 80%;
 	}
@@ -112,25 +115,25 @@ RESPONSIVE FIXES
 	.intro {
 		text-align: center !important;
 	}
-	
+
 	.button-container {
-	    margin-top: 10px;
-	    margin-bottom: 70px;
-	    padding: 10px;
+		margin-top: 10px;
+		margin-bottom: 70px;
+		padding: 10px;
 	}
-	
+
 	.intro-section .sub-heading {
-	    font-size: 15px;
-	    line-height: 25px;
+		font-size: 15px;
+		line-height: 25px;
 	}
 
 	.section1,
-    .section2,
-    .section3,
-    .section4,
-    .section5,
-    .section6,
-    .section7 {
+	.section2,
+	.section3,
+	.section4,
+	.section5,
+	.section6,
+	.section7 {
 		padding-top: 75px;
 		padding-bottom: 75px;
 	}
@@ -147,10 +150,16 @@ RESPONSIVE FIXES
 
 	.navbar-toggle {
 		background: #727272;
+		padding: 12px 14px;
 	}
 
 	.nav>li {
 		display: inline-block;
+	}
+
+	.nav>li>a {
+		min-height: 44px;
+		padding: 12px 15px;
 	}
 
 	.vertical-registration-form {
@@ -163,11 +172,25 @@ RESPONSIVE FIXES
 		margin-bottom: 10px;
 		margin-top: 25px;
 	}
+
+	/* Mobile button improvements */
+	.standard-button {
+		padding: 12px 30px;
+		font-size: 18px;
+		min-width: 200px;
+	}
+
+	/* Parallax sections - disable fixed on mobile */
+	.dta-section .color-overlay,
+	.eta-section .color-overlay {
+		background-attachment: scroll !important;
+		width: 100% !important;
+	}
 }
- 
- 
+
+
 @media(max-width:480px) {
-    
+
 	html {
 		font-size: 65%;
 	}
@@ -180,9 +203,9 @@ RESPONSIVE FIXES
 		font-size: 13px;
 		line-height: 21px;
 	}
-	
+
 	.button-container {
-	    margin-bottom: 40px;
+		margin-bottom: 40px;
 	}
 
 	.feature-list-1 {
@@ -209,10 +232,12 @@ RESPONSIVE FIXES
 	}
 
 	.standard-button,
-    .secondary-button,
-    .secondary-button-white {
-		font-size: 13px;
-		min-width: 100px;
-		padding: 11px 20px 11px 20px;
+	.secondary-button,
+	.secondary-button-white {
+		font-size: 16px;
+		min-width: 180px;
+		padding: 14px 25px;
+		width: 100%;
+		max-width: 280px;
 	}
 }
