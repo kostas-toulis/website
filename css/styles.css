@@ -456,7 +456,7 @@ header .home-screenshot {
 	text-transform: none;
 	font-weight: 700;
 	color: #7fabb4;
-	border-bottom: 3px solid #fff;
+	border-bottom: 3px solid #7fabb4;
 	transition: background .15s cubic-bezier(.33, .66, .66, 1);
 	text-decoration: none;
 }
@@ -503,8 +503,9 @@ header .home-screenshot {
 	color: #7fabb4;
 	line-height: 32px;
 	margin-right: 15px;
-	margin-top: 5px;
+	margin-top: 0;
 	text-align: center;
+	float: left;
 }
 
 .feature-list-2 li .details {
@@ -512,10 +513,12 @@ header .home-screenshot {
 }
 
 .feature-list-2 li .details p {
-	margin-top: 5px;
+	margin-top: 0;
+	margin-bottom: 8px;
 	background: #ffffff;
 	padding: 10px 15px;
 	border-radius: 5px;
+	line-height: 32px;
 }
 
 
@@ -800,27 +803,29 @@ object {
 }
 
 .dta-section {
-	background: url(../images/bg-image-4.jpg) no-repeat center fixed;
-	-webkit-background-size: cover;
-	background-size: cover;
+	background: #f8f7f2;
 }
 
-
 .dta-section .color-overlay {
-	padding-top: 125px;
-	padding-bottom: 125px;
+	background: url(../images/bg-image-4.jpg) no-repeat center;
+	background-size: cover;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 112px;
+	padding-bottom: 112px;
 }
 
 .eta-section {
-	background: url(../images/toulis-logo-parallax.svg) no-repeat center fixed;
-	-webkit-background-size: cover;
-	background-size: cover;
+	background: #f8f7f2;
 }
 
-
 .eta-section .color-overlay {
-	padding-top: 125px;
-	padding-bottom: 125px;
+	background: url(../images/toulis-logo-parallax.svg) no-repeat center;
+	background-size: cover;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 112px;
+	padding-bottom: 112px;
 }
 
 
@@ -931,8 +936,8 @@ object {
    4.11 SECTION: FOOTER
 ==========================================*/
 footer {
-	padding-top: 75px;
-	padding-bottom: 75px;
+	padding-top: 40px;
+	padding-bottom: 30px;
 }
 
 .footer-logo {
@@ -941,8 +946,8 @@ footer {
 }
 
 .copyright {
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	color: #333333;
 }
 
