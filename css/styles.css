@@ -435,7 +435,7 @@ header .home-screenshot {
 	font-size: 20px;
 	text-transform: none;
 	font-weight: 400;
-	color: #ffffff;
+	color: #333333;
 	text-decoration: none;
 }
 
@@ -443,9 +443,9 @@ header .home-screenshot {
 	font-family: 'Roboto Slab', serif;
 	font-size: 20px;
 	text-transform: none;
-	font-weight: 400;
-	color: #ffffff;
-	border-bottom: 3px solid #fff;
+	font-weight: 700;
+	color: #7fabb4;
+	border-bottom: 3px solid #7fabb4;
 	transition: background .15s cubic-bezier(.33, .66, .66, 1);
 	text-decoration: none;
 }
@@ -454,8 +454,8 @@ header .home-screenshot {
 	font-family: 'Roboto Slab', serif;
 	font-size: 20px;
 	text-transform: none;
-	font-weight: 400;
-	color: #ffffff;
+	font-weight: 700;
+	color: #7fabb4;
 	border-bottom: 3px solid #fff;
 	transition: background .15s cubic-bezier(.33, .66, .66, 1);
 	text-decoration: none;
@@ -513,6 +513,9 @@ header .home-screenshot {
 
 .feature-list-2 li .details p {
 	margin-top: 5px;
+	background: #ffffff;
+	padding: 10px 15px;
+	border-radius: 5px;
 }
 
 
@@ -797,7 +800,7 @@ object {
 }
 
 .dta-section {
-	background: url(../images/toulis-logo-parallax.svg) no-repeat center fixed;
+	background: url(../images/bg-image-4.jpg) no-repeat center fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -809,7 +812,7 @@ object {
 }
 
 .eta-section {
-	background: url(../images/bg-image-4.jpg) no-repeat center fixed;
+	background: url(../images/toulis-logo-parallax.svg) no-repeat center fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -944,11 +947,11 @@ footer {
 }
 
 .yolo {
-	color: #fff;
+	color: #333333;
 }
 
 .yolo a {
-	color: #fff;
+	color: #7fabb4;
 }
 
 /*========================================
