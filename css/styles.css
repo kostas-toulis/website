@@ -79,8 +79,8 @@ html {
 
 body {
 	background: #f8f7f2;
-/*	background-image: url("images/bg.png"); 10t NOT */
-	font-family: 'Roboto Slab', serif;
+	/*	background-image: url("images/bg.png"); 10t NOT */
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	color: #727272;
 	line-height: 32px;
@@ -317,6 +317,10 @@ h6 {
 	padding-bottom: 100px;
 }
 
+.section5 {
+	background: #edf0e6;
+}
+
 .color-overlay {
 	background: rgba(0, 0, 0, 0);
 }
@@ -330,10 +334,10 @@ h6 {
    4.2.1 BASIC STYLES
 -----------------------------------------*/
 header {
-	background: #f8f7f2;
-  /* background-image: url(https://manoloudis.com/oreo/images/bg-triangle-mosaic.png) !important;  10t NOT */
-  background-position: top left;
-  background-repeat: repeat;
+	background: #e6f0ee;
+	/* background-image: url(https://manoloudis.com/oreo/images/bg-triangle-mosaic.png) !important;  10t NOT */
+	background-position: top left;
+	background-repeat: repeat;
 }
 
 header .vertical-registration-form {
@@ -341,7 +345,7 @@ header .vertical-registration-form {
 }
 
 header .home-screenshot {
-    margin-top: 70px;
+	margin-top: 70px;
 }
 
 .navigation-header {
@@ -360,19 +364,19 @@ header .home-screenshot {
 }
 
 .intro-section .sub-heading {
-    color: #3e3e3e;
-    margin-top: 20px;
-    font-size: 18px;
-    line-height: 28px;
+	color: #3e3e3e;
+	margin-top: 20px;
+	font-size: 18px;
+	line-height: 28px;
 }
 
 .button-container {
-    margin-top: 20px;
-    margin-bottom: 15px;
+	margin-top: 20px;
+	margin-bottom: 15px;
 }
 
 .button-container .standard-button {
-    margin-left: 0;
+	margin-left: 0;
 }
 
 .navbar-header img {
@@ -384,7 +388,7 @@ header .home-screenshot {
    4.2.2 NAVIGATION
 -----------------------------------------*/
 /* NAV RESETS */
-.navbar-nav > li > a:hover {
+.navbar-nav>li>a:hover {
 	background: inherit;
 }
 
@@ -393,7 +397,7 @@ header .home-screenshot {
 	margin-right: 0;
 }
 
-.non-sticky .navbar-nav > li > a {
+.non-sticky .navbar-nav>li>a {
 	font-size: 25px;
 	padding: 0;
 	padding-left: 5px;
@@ -426,7 +430,7 @@ header .home-screenshot {
 	position: relative;
 }
 
-.sticky-navigation .navbar-nav > li > a {
+.sticky-navigation .navbar-nav>li>a {
 	font-family: 'Roboto Slab', serif;
 	font-size: 20px;
 	text-transform: none;
@@ -435,25 +439,25 @@ header .home-screenshot {
 	text-decoration: none;
 }
 
-.sticky-navigation .navbar-nav > li > a:hover {
+.sticky-navigation .navbar-nav>li>a:hover {
 	font-family: 'Roboto Slab', serif;
 	font-size: 20px;
 	text-transform: none;
 	font-weight: 400;
 	color: #ffffff;
 	border-bottom: 3px solid #fff;
-	transition: background .15s cubic-bezier(.33,.66,.66,1);
+	transition: background .15s cubic-bezier(.33, .66, .66, 1);
 	text-decoration: none;
 }
 
-.sticky-navigation .navbar-nav > li > a:active {
+.sticky-navigation .navbar-nav>li>a:active {
 	font-family: 'Roboto Slab', serif;
 	font-size: 20px;
 	text-transform: none;
 	font-weight: 400;
 	color: #ffffff;
 	border-bottom: 3px solid #fff;
-	transition: background .15s cubic-bezier(.33,.66,.66,1);
+	transition: background .15s cubic-bezier(.33, .66, .66, 1);
 	text-decoration: none;
 }
 
@@ -495,7 +499,8 @@ header .home-screenshot {
 	width: 32px;
 	height: 32px;
 	border-radius: 3px;
-	color: #ffffff;
+	background: #FDF6E3;
+	color: #233038;
 	line-height: 32px;
 	margin-right: 15px;
 	margin-top: 5px;
@@ -836,7 +841,7 @@ object {
 
 .subscription-success,
 .subscription-error {
-    color: #FFFFFF;
+	color: #FFFFFF;
 }
 
 /*========================================
@@ -950,11 +955,11 @@ footer {
 ==========================================*/
 
 .contact-details {
-background: #fff;
+	background: #fff;
 }
 
 .society-row {
-background: #f8f7f2;
-width: 100%;
-margin: 0 auto;
+	background: #f8f7f2;
+	width: 100%;
+	margin: 0 auto;
 }
