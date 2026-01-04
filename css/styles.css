@@ -495,7 +495,7 @@ header .home-screenshot {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 }
 
 .feature-list-2 li .icon-container {
@@ -506,14 +506,12 @@ header .home-screenshot {
 	color: #7fabb4;
 	line-height: 32px;
 	margin-right: 15px;
-	margin-top: 0;
 	text-align: center;
-	float: left;
-	vertical-align: top;
+	flex-shrink: 0;
 }
 
 .feature-list-2 li .details {
-	width: 89%;
+	flex: 1;
 }
 
 .feature-list-2 li .details p {
