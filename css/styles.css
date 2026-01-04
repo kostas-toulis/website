@@ -492,8 +492,10 @@ header .home-screenshot {
 
 .feature-list-2 li {
 	overflow: auto;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: flex;
+	align-items: flex-start;
 }
 
 .feature-list-2 li .icon-container {
@@ -515,12 +517,11 @@ header .home-screenshot {
 }
 
 .feature-list-2 li .details p {
-	margin-top: 0;
-	margin-bottom: 4px;
+	margin: 0;
 	background: #ffffff;
-	padding: 8px 15px;
+	padding: 5px 10px;
 	border-radius: 5px;
-	line-height: 32px;
+	line-height: 1.5;
 }
 
 
