@@ -285,7 +285,7 @@ h6 {
 
 .standard-button {
 	font-family: 'Roboto Slab', serif;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 700;
 	text-transform: none;
 	border-radius: 25px;
@@ -532,7 +532,7 @@ header .home-screenshot {
 
 .feature {
 	margin-top: 40px;
-	margin-bottom: 35px;
+	margin-bottom: 10px;
 }
 
 .feature:first-child {
