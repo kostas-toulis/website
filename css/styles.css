@@ -797,15 +797,19 @@ object {
    4.9.1 CALL TO ACTION WITH TEXT/BUTTON
 -----------------------------------------*/
 .cta-section {
-	background: #7fabb4;
+	background: #f8f7f2;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 
 
 .cta-section .color-overlay {
-	padding-top: 125px;
-	padding-bottom: 125px;
+	background: url(../images/cta-parallax.jpg) no-repeat center fixed;
+	background-size: cover;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 112px;
+	padding-bottom: 112px;
 }
 
 .dta-section {
