@@ -182,8 +182,11 @@ RESPONSIVE FIXES
 
 	/* Parallax sections - disable fixed on mobile */
 	.dta-section .color-overlay,
-	.eta-section .color-overlay {
+	.eta-section .color-overlay,
+	.cta-section .color-overlay {
 		background-attachment: scroll !important;
+		background-position: center center !important;
+		background-size: cover !important;
 		width: 100% !important;
 	}
 }
