@@ -219,8 +219,9 @@ Have a nice day!
 										onclick="_gs('event', 'Clicked 'services' in the main menu')">υπηρεσίες</a></li>
 								<li><a href="#section3"
 										onclick="_gs('event', 'Clicked 'clinic' in the main menu')">ιατρείο</a></li>
-								<li><a href="#section5" onclick="_gs('event', 'Clicked 'FAQ' in the main menu')">συχνές
+								<li><a href="#section5" onclick="_gs('event', 'Clicked \'FAQ\' in the main menu')">συχνές
 										ερωτήσεις</a></li>
+								<li><a href="#appointment" onclick="_gs('event', 'Clicked \'appointment\' in the main menu')">ραντεβού</a></li>
 								<li><a href="#section6"
 										onclick="_gs('event', 'Clicked 'contact' in the main menu')">επικοινωνία</a>
 								</li>
@@ -1064,6 +1065,105 @@ Have a nice day!
 
 
 	<!-- =========================
+     SECTION - BOOKING
+============================== -->
+	<section class="section7" id="appointment">
+		<div class="container">
+
+			<!-- SECTION HEADING -->
+			<h2>Κράτηση Ραντεβού</h2>
+
+			<div class="colored-line">
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<style>
+						.booking-wrapper {
+							position: relative;
+							max-height: 400px;
+							overflow: hidden;
+							transition: max-height 0.5s ease-out;
+						}
+						.booking-wrapper.expanded {
+							max-height: 2000px; /* Large enough to fit the iframe */
+						}
+						.booking-overlay {
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							width: 100%;
+							height: 150px;
+							background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1) 90%);
+							display: flex;
+							align-items: flex-end;
+							justify-content: center;
+							pointer-events: none; /* Let clicks pass through to the button */
+							transition: opacity 0.3s ease;
+						}
+						.booking-wrapper.expanded .booking-overlay {
+							/* When expanded, hide overlay completely */
+							opacity: 0;
+							pointer-events: none;
+						}
+						
+						.booking-btn-container {
+							pointer-events: auto;
+							padding-bottom: 20px;
+							width: 100%;
+							text-align: center;
+						}
+
+						/* Top Collapse Button Styles */
+						.booking-top-controls {
+							text-align: center;
+							margin-bottom: 10px;
+							display: none; /* Hidden by default */
+						}
+						.booking-wrapper.expanded .booking-top-controls {
+							display: block; /* Show when expanded */
+						}
+					</style>
+					
+					<div class="booking-wrapper" id="bookingWrapper">
+						
+						<!-- Top Collapse Button -->
+						<div class="booking-top-controls">
+							<button class="btn standard-button" onclick="toggleBooking()">Σύμπτυξη φόρμας</button>
+						</div>
+
+						<iframe
+						  id="bookingIframe"
+						  src="https://appointment-booking.pages.dev"
+						  title="Κράτηση Ραντεβού (μη επείγον μόνο)"
+						  width="100%"
+						  height="800"
+						  style="border: none; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); width: 100%; max-width: 800px; display: block; margin: 0 auto;"
+						  allow="clipboard-read; clipboard-write; camera; microphone"
+						  loading="lazy">
+						</iframe>
+						
+						<div class="booking-overlay" id="bookingOverlay">
+							<div class="booking-btn-container">
+								<button class="btn standard-button btn-expand" onclick="toggleBooking()">Προβολή όλης της φόρμας</button>
+							</div>
+						</div>
+					</div>
+
+					<script>
+						function toggleBooking() {
+							var wrapper = document.getElementById('bookingWrapper');
+							wrapper.classList.toggle('expanded');
+						}
+					</script>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!-- =========================
      SECTION 6 - CONTACT US
 ============================== -->
 	<section class="contact-us" id="section6">
@@ -1140,14 +1240,14 @@ Have a nice day!
 
 					<div class="panel-group" id="accordion-contact">
 						<div class="panel panel-default">
-							<div class="panel-heading">
+							<div class="panel-heading" style="background-color: #f0eee6;">
 								<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion-contact" href="#collapseThirteen"
 										onclick="_gs('event', 'Clicked bus route instructions')">Πλησιέστερες στάσεις με
 										το λεωφορείο</a>
 								</h4>
 							</div>
-							<div id="collapseThirteen" class="panel-collapse collapse">
+							<div id="collapseThirteen" class="panel-collapse collapse" style="background-color: #f0eee6;">
 								<div class="panel-body">
 									<p>Από Δυτικά προς το κέντρο</br>
 										Διερχόμενα λεωφορεία από τη στάση “Μητρόπολη”</br>
