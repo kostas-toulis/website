@@ -61,7 +61,7 @@ Designed By: Mizanur Rahman
    1. IMPORT GOOGLE WEB FONTS
 -----------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
 /* --------------------------------------
 =========================================
@@ -277,7 +277,7 @@ h6 {
 }
 
 .standard-button {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Manrope', sans-serif;
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: none;
@@ -424,37 +424,42 @@ header .home-screenshot {
 	backface-visibility: hidden;
 	outline: inherit;
 	position: relative;
+	text-decoration: none !important;
 }
 
 .sticky-navigation .navbar-nav>li>a {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Manrope', sans-serif;
 	font-size: 20px;
 	text-transform: none;
 	font-weight: 400;
 	color: #333333;
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 .sticky-navigation .navbar-nav>li>a:hover {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Manrope', sans-serif;
 	font-size: 20px;
 	text-transform: none;
-	font-weight: 700;
-	color: #7fabb4;
-	border-bottom: 3px solid #7fabb4;
+	font-weight: 400;
+	color: #333333;
+	background: rgba(255, 255, 255, 0.85);
+	border-bottom: none;
+	border-radius: 6px;
 	transition: background .15s cubic-bezier(.33, .66, .66, 1);
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 .sticky-navigation .navbar-nav>li>a:active {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Manrope', sans-serif;
 	font-size: 20px;
 	text-transform: none;
-	font-weight: 700;
-	color: #7fabb4;
-	border-bottom: 3px solid #7fabb4;
+	font-weight: 400;
+	color: #333333;
+	background: rgba(255, 255, 255, 0.85);
+	border-bottom: none;
+	border-radius: 6px;
 	transition: background .15s cubic-bezier(.33, .66, .66, 1);
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 /*========================================
@@ -881,7 +886,7 @@ object {
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-top: 50px;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Manrope', sans-serif;
 }
 
 .contact-link:hover {

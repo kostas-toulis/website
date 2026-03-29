@@ -6,7 +6,7 @@
 .color-overlay{background:rgba(0,0,0,.4)}.intro{font-size:48px;font-weight:700;color:#fff;text-align:center;margin-bottom:20px}.sub-heading p{font-size:18px;color:#fff;text-align:center;margin-bottom:30px}
 
 /* Typography */
-body{font-family:'Tinos',serif;line-height:1.6;color:#333;background:#fff}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:20px;font-weight:700}h1{font-size:48px}h2{font-size:36px}h3{font-size:28px}
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.6;color:#333;background:#fff}h1,h2,h3,h4,h5,h6{font-family:'Roboto Slab',serif;margin-top:0;margin-bottom:20px;font-weight:700}h1{font-size:48px}h2{font-size:36px}h3{font-size:28px}
 
 /* Buttons */
 .btn{display:inline-block;padding:12px 24px;margin-bottom:0;font-size:16px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;cursor:pointer;background-image:none;border:1px solid transparent;border-radius:4px}.standard-button{background:#323232;color:#fff;border:none;padding:15px 30px;font-size:16px;font-weight:700;text-transform:uppercase;border-radius:30px;transition:all .3s ease}.standard-button:hover{background:#555;color:#fff}
