@@ -402,12 +402,302 @@
 }
 .meta-card__link:hover { text-decoration: underline; }
 
+/* ==========================================================================
+   Biography page — translated from claude-design handoff/mockups/biography.jsx
+   ========================================================================== */
+
+/* ---------- Bio hero (prose + sticky portrait) ---------- */
+.bio-hero {
+  background:
+    radial-gradient(ellipse at top left, #f0f5f2 0%, transparent 55%),
+    radial-gradient(ellipse at bottom right, #f7f1e6 0%, transparent 50%),
+    var(--bg-editor);
+}
+.bio-hero__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 72px;
+  padding: 72px var(--sp-12) 96px;
+  align-items: start;
+}
+.bio-hero__title {
+  font-size: clamp(40px, 5.4vw, 64px);
+  line-height: 1.02;
+  margin: var(--sp-5) 0 var(--sp-7);
+}
+.bio-hero__accent {
+  /* Mockup specified italic+green; Didot ships no italic and synthetic
+     italic on a high-contrast serif at display sizes reads poorly.
+     The green carries the emphasis cleanly on its own. */
+  color: var(--accent);
+}
+.bio-hero__lede {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--ink-2);
+  margin: 0 0 var(--sp-6);
+}
+.bio-hero__p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink-2);
+  margin: 0 0 var(--sp-5);
+}
+
+.bio-portrait { width: 100%; }
+@media (min-width: 1024px) {
+  .bio-portrait { position: sticky; top: var(--sp-10); }
+}
+.bio-portrait__card {
+  background: var(--card);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--r-hero);
+  padding: 8px;
+  box-shadow: var(--shadow-portrait);
+}
+.bio-portrait__image {
+  border-radius: 18px;
+  aspect-ratio: 4 / 5;
+  background:
+    linear-gradient(180deg, transparent 55%, rgba(47,93,80,0.28) 100%),
+    repeating-linear-gradient(135deg, #e8e2d1 0 14px, #e2dcca 14px 28px);
+}
+.bio-portrait__meta {
+  padding: 20px 20px 8px;
+}
+.bio-portrait__name {
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0;
+}
+.bio-portrait__sub {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 2px 0 0;
+}
+.bio-portrait__creds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 14px 20px 20px;
+  margin: 0;
+  list-style: none;
+}
+
+/* ---------- Timeline ---------- */
+.timeline {
+  background: var(--bg-warm);
+  padding: var(--sp-24) var(--sp-12);
+  border-top: 1px solid var(--line);
+}
+.timeline__inner { max-width: 900px; margin: 0 auto; }
+.timeline__head { margin-bottom: var(--sp-12); }
+.timeline__label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.timeline__title {
+  font-size: clamp(28px, 3.6vw, 38px);
+  margin: var(--sp-3) 0 0;
+}
+.timeline__note {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 10px;
+}
+.timeline__list { list-style: none; padding: 0; margin: 0; }
+.tl-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: var(--sp-10);
+  padding: var(--sp-6) 0;
+  border-top: 1px solid var(--line);
+  align-items: start;
+}
+.tl-row__year {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--muted);
+}
+.tl-row__title {
+  font-size: 19px;
+  letter-spacing: -0.015em;
+  margin: 0 0 6px;
+  color: var(--ink);
+  font-weight: 500;
+}
+.tl-row__detail {
+  font-size: 14.5px;
+  color: var(--ink-2);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ---------- Publications ---------- */
+.publications {
+  background: var(--paper);
+  padding: var(--sp-24) var(--sp-12);
+  border-top: 1px solid var(--line);
+}
+.publications__inner { max-width: 1080px; margin: 0 auto; }
+.publications__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-10);
+}
+.publications__label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.publications__title {
+  font-size: clamp(28px, 3.6vw, 38px);
+  margin: var(--sp-3) 0 0;
+}
+.publications__pubmed {
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 500;
+}
+.publications__pubmed:hover { text-decoration: underline; }
+
+.pub-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-8);
+}
+.pub-stat {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  padding: 22px;
+}
+.pub-stat__big {
+  font-size: 36px;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin: 0;
+  color: var(--ink);
+  font-weight: 500;
+}
+.pub-stat__big sup {
+  font-size: 18px;
+  color: var(--accent);
+  vertical-align: baseline;
+  margin-left: 2px;
+}
+.pub-stat__cap {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin: 8px 0 0;
+  line-height: 1.4;
+}
+
+.pub-list {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  padding: 8px var(--sp-6);
+  list-style: none;
+  margin: 0;
+}
+.pub {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  gap: var(--sp-5);
+  align-items: baseline;
+  padding: 18px 0;
+  border-bottom: 1px dashed var(--line-dash);
+}
+.pub:last-child { border-bottom: 0; }
+.pub__yr {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+}
+.pub__title {
+  font-size: 15px;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+  margin: 0;
+  color: var(--ink);
+  font-weight: 500;
+}
+.pub__journal {
+  font-size: 12.5px;
+  color: var(--muted);
+  font-style: italic; /* Inter italic synthesizes acceptably */
+  margin: 4px 0 0;
+}
+.pub__link {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.pub__link:hover { text-decoration: underline; }
+.pub-list__note {
+  margin-top: var(--sp-5);
+  font-size: 12.5px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ---------- Bio CTA ---------- */
+.bio-cta {
+  background: var(--bg-warm);
+  padding: var(--sp-24) var(--sp-12) 120px;
+  text-align: center;
+  border-top: 1px solid var(--line);
+}
+.bio-cta__title {
+  font-size: clamp(28px, 3.6vw, 38px);
+  margin: 0 0 var(--sp-4);
+  color: var(--ink);
+}
+.bio-cta__sub {
+  font-size: 17px;
+  color: var(--ink-2);
+  max-width: 52ch;
+  margin: 0 auto var(--sp-9);
+  line-height: 1.55;
+}
+.bio-cta__actions {
+  display: flex;
+  gap: var(--sp-3);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.bio-cta__icon { width: 16px; height: 16px; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .stats__grid    { grid-template-columns: repeat(2, 1fr); }
   .tease__grid    { grid-template-columns: repeat(2, 1fr); }
   .practice__row  { grid-template-columns: 1fr; }
   .practice__meta { grid-template-columns: 1fr; }
+
+  .bio-hero__inner { grid-template-columns: 1fr; gap: var(--sp-10); padding: var(--sp-12) var(--sp-6) var(--sp-16); }
+  .bio-portrait    { max-width: 420px; margin: 0 auto; }
+  .pub-stats       { grid-template-columns: 1fr; }
+  .timeline,
+  .publications,
+  .bio-cta         { padding-left: var(--sp-6); padding-right: var(--sp-6); }
+  .tl-row          { grid-template-columns: 110px 1fr; gap: var(--sp-5); }
 }
 @media (max-width: 560px) {
   .hero            { padding-top: var(--sp-12); }
@@ -418,4 +708,14 @@
   .approach,
   .tease,
   .practice       { padding: var(--sp-16) var(--sp-6); }
+
+  .timeline,
+  .publications,
+  .bio-cta         { padding-top: var(--sp-16); padding-bottom: var(--sp-16); }
+  .tl-row          { grid-template-columns: 1fr; gap: var(--sp-1); }
+  .pub             { grid-template-columns: 1fr auto; row-gap: 4px; }
+  .pub__yr         { grid-row: 1; grid-column: 1; }
+  .pub__body       { grid-row: 2; grid-column: 1 / -1; }
+  .pub__link       { grid-row: 1; grid-column: 2; }
+  .publications__head { flex-direction: column; align-items: flex-start; }
 }
