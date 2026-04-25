@@ -184,15 +184,13 @@
 }
 .approach__quote {
   font-family: var(--font-serif);
-  /* GFS Didot ships no italic; upright pull-quote with « » is also more
-     idiomatic Greek editorial style. */
-  font-style: normal;
+  font-style: italic;
   font-weight: 400;
   font-size: clamp(24px, 3.4vw, 34px);
-  line-height: 1.3;
+  line-height: 1.25;
   margin: var(--sp-5) 0 0;
   color: var(--ink);
-  letter-spacing: 0;
+  letter-spacing: -0.01em;
 }
 
 /* ---------- Services teaser ---------- */
@@ -428,9 +426,8 @@
   margin: var(--sp-5) 0 var(--sp-7);
 }
 .bio-hero__accent {
-  /* Mockup specified italic+green; Didot ships no italic and synthetic
-     italic on a high-contrast serif at display sizes reads poorly.
-     The green carries the emphasis cleanly on its own. */
+  /* Mockup-faithful: italic + green for the H1 emphasis. */
+  font-style: italic;
   color: var(--accent);
 }
 .bio-hero__lede {

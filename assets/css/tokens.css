@@ -64,13 +64,12 @@
   --sp-24: 96px;
 
   /* ── Type ──
-     GFS Didot replaces Fraunces (which lacks a Greek subset). GFS Didot is
-     drawn in Greece for Greek by the Greek Font Society — high-contrast
-     editorial serif, the closest Greek-native analog to the original
-     design's Fraunces direction. Ships regular weight only, no italic;
-     headings rely on size + serif/sans contrast for hierarchy.
+     Source Serif 4 (Adobe) — modern transitional editorial serif, the
+     closest practical match to the mockup's Fraunces while still
+     supporting Greek glyphs (which Fraunces does not). Has italic and
+     weight 500, so the design's editorial emphasis works as intended.
      Faces are self-hosted — see fonts.css. */
-  --font-serif: "GFS Didot", Georgia, serif;
+  --font-serif: "Source Serif 4", Georgia, serif;
   --font-sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-mono:  "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
 }
