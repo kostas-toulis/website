@@ -63,63 +63,12 @@
   --sp-20: 80px;
   --sp-24: 96px;
 
-  /* ── Type ── */
-  /* Fraunces / Inter / JetBrains Mono.
-     Self-hosting: drop woff2 files into /assets/fonts/ and uncomment the
-     @font-face rules below. Until then, the system fallbacks render. */
-  --font-serif: "Fraunces", Georgia, serif;
+  /* ── Type ──
+     EB Garamond replaces Fraunces (which lacks a Greek subset). EB Garamond
+     ships properly drawn Greek glyphs from Google Fonts — necessary for a
+     Greek-first practice. Faces are self-hosted; see fonts.css for the
+     @font-face declarations and unicode-range subsetting. */
+  --font-serif: "EB Garamond", "GFS Didot", Georgia, serif;
   --font-sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-mono:  "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
 }
-
-/* ── Self-hosted font declarations ─────────────────────────────────────────
-   Fonts are NOT yet committed to /assets/fonts/. Owner to provide woff2 files
-   (or run a download script). Until then, fallbacks above keep the page
-   readable without runtime calls to Google Fonts (privacy + perf).
-
-@font-face {
-  font-family: "Fraunces";
-  src: url("/assets/fonts/fraunces-400.woff2") format("woff2");
-  font-weight: 400; font-style: normal; font-display: swap;
-}
-@font-face {
-  font-family: "Fraunces";
-  src: url("/assets/fonts/fraunces-500.woff2") format("woff2");
-  font-weight: 500; font-style: normal; font-display: swap;
-}
-@font-face {
-  font-family: "Fraunces";
-  src: url("/assets/fonts/fraunces-400-italic.woff2") format("woff2");
-  font-weight: 400; font-style: italic; font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("/assets/fonts/inter-400.woff2") format("woff2");
-  font-weight: 400; font-style: normal; font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("/assets/fonts/inter-500.woff2") format("woff2");
-  font-weight: 500; font-style: normal; font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("/assets/fonts/inter-600.woff2") format("woff2");
-  font-weight: 600; font-style: normal; font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("/assets/fonts/inter-700.woff2") format("woff2");
-  font-weight: 700; font-style: normal; font-display: swap;
-}
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("/assets/fonts/jetbrains-mono-400.woff2") format("woff2");
-  font-weight: 400; font-style: normal; font-display: swap;
-}
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("/assets/fonts/jetbrains-mono-500.woff2") format("woff2");
-  font-weight: 500; font-style: normal; font-display: swap;
-}
-*/
