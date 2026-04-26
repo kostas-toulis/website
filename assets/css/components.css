@@ -868,12 +868,16 @@
 }
 
 /* Editorial figure block — sits at the end of a pillar section to provide
-   one visual moment of evidence (e.g. the one-stop ultrasound shot). */
+   one visual moment of evidence (e.g. the one-stop ultrasound shot).
+   Image left, caption right, the whole composition centered as a
+   single unit inside the pillar's 900px column — preserves the
+   editorial flow of the indexed list above. */
 .svc-figure {
-  margin: var(--sp-12) 0 0;
+  margin: var(--sp-12) auto 0;
   padding: 0;
+  max-width: 720px;
   display: grid;
-  grid-template-columns: minmax(260px, 1fr) 1fr;
+  grid-template-columns: 280px 1fr;
   gap: var(--sp-6);
   align-items: end;
 }
@@ -888,11 +892,12 @@
   object-fit: cover;
 }
 .svc-figure__cap {
+  margin: 0;
+  padding-bottom: var(--sp-4);
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--ink-2);
   font-style: italic;
-  padding-bottom: var(--sp-4);
   max-width: 38ch;
 }
 
@@ -1105,7 +1110,7 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--sp-4);
 }
 .contact-strip__item {
@@ -1115,14 +1120,11 @@
   width: 100%;
   height: 100%;
   display: block;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: var(--r-card);
   border: 1px solid var(--line);
   background: var(--paper-2);
-}
-.contact-strip__item:first-child img {
-  aspect-ratio: 4 / 3;
 }
 
 /* ---------- Responsive ---------- */
@@ -1143,11 +1145,15 @@
   .services-hero,
   .services-pillar { padding-left: var(--sp-6); padding-right: var(--sp-6); }
   .services-pillar__head { gap: var(--sp-4); }
+  .svc-figure { grid-template-columns: 1fr; gap: var(--sp-4); max-width: 460px; }
+  .svc-figure__cap { padding-bottom: 0; }
 
   .contact-meta__grid    { grid-template-columns: repeat(2, 1fr); }
   .contact-strip__grid   { grid-template-columns: 1fr 1fr; }
   .contact-strip__item:first-child  { grid-column: 1 / -1; }
   .contact-strip__item:first-child img { aspect-ratio: 16 / 9; }
+  .contact-strip__item:nth-child(2) img,
+  .contact-strip__item:nth-child(3) img { aspect-ratio: 1 / 1; }
 }
 @media (max-width: 560px) {
   .hero            { padding-top: var(--sp-12); }
@@ -1186,6 +1192,8 @@
   .contact-meta__grid { grid-template-columns: 1fr; }
   .contact-meta__cta  { flex-direction: column; align-items: flex-start; }
   .contact-strip__grid { grid-template-columns: 1fr; }
-  .contact-strip__item:first-child img { aspect-ratio: 16 / 9; }
+  .contact-strip__item:first-child img,
+  .contact-strip__item:nth-child(2) img,
+  .contact-strip__item:nth-child(3) img { aspect-ratio: 16 / 9; }
   .contact-map__frame  { aspect-ratio: 4 / 3; }
 }
