@@ -431,9 +431,10 @@
   color: var(--accent);
 }
 .bio-hero__lede {
-  font-family: var(--font-serif);
-  font-size: 19px;
-  line-height: 1.5;
+  /* Same family as the rest of the prose — the lede is just slightly larger
+     for editorial hierarchy, not a different typeface. */
+  font-size: 18px;
+  line-height: 1.6;
   color: var(--ink-2);
   margin: 0 0 var(--sp-6);
 }
@@ -475,6 +476,23 @@
   font-size: 13px;
   color: var(--muted);
   margin: 2px 0 0;
+}
+/* Secondary role line — military physician + 424 ΓΣΝΕ post.
+   Quieter than the specialty subtitle, but present so visitors who care
+   about the institutional credential can find it without it competing
+   with the private-practice headline. */
+.bio-portrait__role {
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--muted);
+  margin: 8px 0 0;
+  padding-top: 8px;
+  border-top: 1px dashed var(--line);
+}
+.bio-portrait__role-sep {
+  display: inline-block;
+  margin: 0 4px;
+  color: var(--accent-2);
 }
 .bio-portrait__creds {
   display: flex;
@@ -681,6 +699,174 @@
 }
 .bio-cta__icon { width: 16px; height: 16px; }
 
+/* ==========================================================================
+   Services indexed-list page — translated from handoff/05-services-taxonomy.md
+   Four pillar sections, eighteen condition rows. Editorial restraint:
+   serif title, mono numbering, alternating section backgrounds.
+   ========================================================================== */
+
+/* ---------- Page hero ---------- */
+.services-hero {
+  padding: var(--sp-24) var(--sp-12) var(--sp-16);
+  background:
+    radial-gradient(ellipse at top right, #f0f5f2 0%, transparent 55%),
+    var(--bg-editor);
+  border-bottom: 1px solid var(--line);
+}
+.services-hero__inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.services-hero__title {
+  font-size: clamp(36px, 4.8vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  margin: var(--sp-3) 0 var(--sp-6);
+}
+.services-hero__title em {
+  font-style: italic;
+  color: var(--accent);
+}
+.services-hero__lede {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--ink-2);
+  max-width: 62ch;
+  margin: 0 0 var(--sp-10);
+}
+
+/* Pillar quick-jump nav */
+.services-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2) var(--sp-3);
+  padding-top: var(--sp-6);
+  border-top: 1px dashed var(--line-dash);
+}
+.services-jump a {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: var(--card);
+  transition: border-color 150ms, color 150ms, background 150ms;
+}
+.services-jump a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* ---------- Pillar section ---------- */
+.services-pillar {
+  padding: var(--sp-20) var(--sp-12);
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: var(--sp-12); /* offset jump-link landing under sticky header */
+}
+.services-pillar--alt {
+  background: var(--bg-warm);
+}
+.services-pillar__inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.services-pillar__head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--sp-6);
+  align-items: end;
+  margin-bottom: var(--sp-10);
+  padding-bottom: var(--sp-6);
+  border-bottom: 1px solid var(--line);
+}
+.services-pillar__roman {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(56px, 8vw, 88px);
+  line-height: 0.9;
+  color: var(--accent-2);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+.services-pillar__label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 var(--sp-2);
+}
+.services-pillar__title {
+  font-size: clamp(26px, 3.4vw, 36px);
+  letter-spacing: -0.015em;
+  margin: 0;
+  color: var(--ink);
+}
+
+/* ---------- Indexed condition list ---------- */
+.svc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.svc-row {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: var(--sp-6);
+  align-items: baseline;
+  padding: var(--sp-6) 0;
+  border-bottom: 1px dashed var(--line-dash);
+  scroll-margin-top: var(--sp-12);
+}
+.svc-row:last-child {
+  border-bottom: none;
+}
+.svc-row__num {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  padding-top: 4px;
+}
+.svc-row__title {
+  font-weight: 500;
+  font-size: clamp(20px, 2.2vw, 24px);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 var(--sp-2);
+}
+.svc-row__desc {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--ink-2);
+  margin: 0;
+  max-width: 62ch;
+}
+.svc-row__highlight {
+  display: block;
+  margin-top: var(--sp-2);
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--accent-soft);
+  border-left: 2px solid var(--accent);
+  border-radius: 0 var(--r-chip) var(--r-chip) 0;
+  font-weight: 400;
+  color: var(--ink);
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+.svc-row__highlight em {
+  font-style: italic;
+  color: var(--accent-dark);
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .stats__grid    { grid-template-columns: repeat(2, 1fr); }
@@ -695,6 +881,10 @@
   .publications,
   .bio-cta         { padding-left: var(--sp-6); padding-right: var(--sp-6); }
   .tl-row          { grid-template-columns: 110px 1fr; gap: var(--sp-5); }
+
+  .services-hero,
+  .services-pillar { padding-left: var(--sp-6); padding-right: var(--sp-6); }
+  .services-pillar__head { gap: var(--sp-4); }
 }
 @media (max-width: 560px) {
   .hero            { padding-top: var(--sp-12); }
@@ -715,4 +905,10 @@
   .pub__body       { grid-row: 2; grid-column: 1 / -1; }
   .pub__link       { grid-row: 1; grid-column: 2; }
   .publications__head { flex-direction: column; align-items: flex-start; }
+
+  .services-hero    { padding-top: var(--sp-16); padding-bottom: var(--sp-12); }
+  .services-pillar  { padding-top: var(--sp-12); padding-bottom: var(--sp-12); }
+  .svc-row          { grid-template-columns: 1fr; gap: var(--sp-1); padding: var(--sp-5) 0; }
+  .svc-row__num     { padding-top: 0; }
+  .services-pillar__head { grid-template-columns: 1fr; gap: var(--sp-3); }
 }
