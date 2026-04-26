@@ -423,21 +423,19 @@
 .bio-hero__title {
   font-size: clamp(40px, 5.4vw, 64px);
   line-height: 1.02;
-  margin: var(--sp-5) 0 var(--sp-7);
+  /* sp-10 (40px) bottom margin gives the lede real breathing room from the H1.
+     The previous rule used var(--sp-7) which is not defined in tokens — it
+     resolved to 0 and left the lede pressed against the headline. */
+  margin: var(--sp-5) 0 var(--sp-10);
 }
 .bio-hero__accent {
   /* Mockup-faithful: italic + green for the H1 emphasis. */
   font-style: italic;
   color: var(--accent);
 }
-.bio-hero__lede {
-  /* Same family as the rest of the prose — the lede is just slightly larger
-     for editorial hierarchy, not a different typeface. */
-  font-size: 18px;
-  line-height: 1.6;
-  color: var(--ink-2);
-  margin: 0 0 var(--sp-6);
-}
+/* Lede + subsequent paragraphs share the same size and rhythm — same body
+   prose, no visual jump between the first paragraph and the rest. */
+.bio-hero__lede,
 .bio-hero__p {
   font-size: 16px;
   line-height: 1.7;
@@ -457,11 +455,16 @@
   box-shadow: var(--shadow-portrait);
 }
 .bio-portrait__image {
+  width: 100%;
+  height: auto;
+  display: block;
   border-radius: 18px;
-  aspect-ratio: 4 / 5;
-  background:
-    linear-gradient(180deg, transparent 55%, rgba(47,93,80,0.28) 100%),
-    repeating-linear-gradient(135deg, #e8e2d1 0 14px, #e2dcca 14px 28px);
+  /* Honour the source image's natural aspect ratio (the current portrait is
+     near-square). When a 4:5 portrait is uploaded later, swap this to
+     `aspect-ratio: 4 / 5` and add `object-fit: cover`. */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: var(--paper-2); /* visible behind transparent PNG corners */
 }
 .bio-portrait__meta {
   padding: 20px 20px 8px;
