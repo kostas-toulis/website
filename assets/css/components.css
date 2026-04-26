@@ -1127,6 +1127,196 @@
   background: var(--paper-2);
 }
 
+/* ==========================================================================
+   Notes page — handoff doc 03.
+   FAQ-format patient education. Hero · 5 thematic groups · indexed
+   Q+A blocks · disclaimer outro. Same editorial language as
+   /services/: serif titles, mono labels, alternating warm tones.
+   ========================================================================== */
+
+/* ---------- Hero ---------- */
+.notes-hero {
+  padding: var(--sp-24) var(--sp-12) var(--sp-16);
+  background:
+    radial-gradient(ellipse at top right, #f0f5f2 0%, transparent 55%),
+    var(--bg-editor);
+  border-bottom: 1px solid var(--line);
+}
+.notes-hero__inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.notes-hero__title {
+  font-size: clamp(36px, 4.8vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  margin: var(--sp-3) 0 var(--sp-6);
+}
+.notes-hero__title em {
+  font-style: italic;
+  color: var(--accent);
+}
+.notes-hero__lede {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--ink-2);
+  max-width: 62ch;
+  margin: 0 0 var(--sp-10);
+}
+
+/* Group quick-jump nav (chip pattern, mirrors .services-jump) */
+.notes-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2) var(--sp-3);
+  padding-top: var(--sp-6);
+  border-top: 1px dashed var(--line-dash);
+}
+.notes-jump a {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: var(--card);
+  transition: border-color 150ms, color 150ms, background 150ms;
+}
+.notes-jump a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* ---------- Group section ---------- */
+.notes-group {
+  padding: var(--sp-20) var(--sp-12);
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: var(--sp-12);
+}
+.notes-group--alt {
+  background: var(--bg-warm);
+}
+.notes-group__inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.notes-group__label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 var(--sp-2);
+}
+.notes-group__title {
+  font-size: clamp(26px, 3.4vw, 36px);
+  letter-spacing: -0.015em;
+  margin: 0 0 var(--sp-10);
+  padding-bottom: var(--sp-6);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+/* ---------- Indexed FAQ list ---------- */
+.faq {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.faq__item {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: var(--sp-6);
+  align-items: baseline;
+  padding: var(--sp-8) 0;
+  border-bottom: 1px dashed var(--line-dash);
+  scroll-margin-top: var(--sp-12);
+}
+.faq__item:last-child {
+  border-bottom: none;
+}
+.faq__num {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  padding-top: 6px;
+}
+.faq__body {
+  margin: 0;
+}
+.faq__q {
+  font-weight: 500;
+  font-size: clamp(19px, 2.1vw, 23px);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 var(--sp-4);
+  max-width: 60ch;
+}
+.faq__a {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink-2);
+  margin: 0;
+  max-width: 64ch;
+}
+.faq__a em {
+  font-style: italic;
+  color: var(--ink);
+}
+.faq__see {
+  margin: var(--sp-4) 0 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+.faq__see a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 150ms;
+}
+.faq__see a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* ---------- Disclaimer outro ---------- */
+.notes-outro {
+  padding: var(--sp-16) var(--sp-12);
+  background: var(--bg-editor);
+  text-align: center;
+}
+.notes-outro__inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.notes-outro__rule {
+  width: 60px;
+  height: 1px;
+  background: var(--line);
+  margin: 0 auto var(--sp-6);
+}
+.notes-outro__text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin: 0;
+}
+.notes-outro__text a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-dash);
+}
+.notes-outro__text a:hover {
+  border-bottom-color: var(--accent);
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .stats__grid    { grid-template-columns: repeat(2, 1fr); }
@@ -1154,6 +1344,10 @@
   .contact-strip__item:first-child img { aspect-ratio: 16 / 9; }
   .contact-strip__item:nth-child(2) img,
   .contact-strip__item:nth-child(3) img { aspect-ratio: 1 / 1; }
+
+  .notes-hero,
+  .notes-group,
+  .notes-outro { padding-left: var(--sp-6); padding-right: var(--sp-6); }
 }
 @media (max-width: 560px) {
   .hero            { padding-top: var(--sp-12); }
@@ -1196,4 +1390,9 @@
   .contact-strip__item:nth-child(2) img,
   .contact-strip__item:nth-child(3) img { aspect-ratio: 16 / 9; }
   .contact-map__frame  { aspect-ratio: 4 / 3; }
+
+  .notes-hero       { padding-top: var(--sp-16); padding-bottom: var(--sp-12); }
+  .notes-group      { padding-top: var(--sp-12); padding-bottom: var(--sp-12); }
+  .faq__item        { grid-template-columns: 1fr; gap: var(--sp-2); padding: var(--sp-6) 0; }
+  .faq__num         { padding-top: 0; }
 }
