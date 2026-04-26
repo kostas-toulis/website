@@ -901,6 +901,63 @@
   max-width: 38ch;
 }
 
+/* --- Cutting-edge tech link — editorial pull-block ----------------------- */
+.svc-tech-link {
+  display: block;
+  margin: var(--sp-12) auto 0;
+  max-width: 560px;
+  padding: var(--sp-8) var(--sp-6) var(--sp-7);
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  border-top: 1px dashed var(--line);
+  border-bottom: 1px dashed var(--line);
+  transition: background-color .25s ease;
+}
+.svc-tech-link:hover,
+.svc-tech-link:focus-visible {
+  background-color: var(--paper-2);
+}
+.svc-tech-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.svc-tech-link__eyebrow {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-bottom: var(--sp-3);
+}
+.svc-tech-link__title {
+  display: block;
+  font-size: clamp(22px, 2.6vw, 28px);
+  line-height: 1.2;
+  font-style: italic;
+  color: var(--accent);
+  margin-bottom: var(--sp-3);
+}
+.svc-tech-link__arrow {
+  display: inline-block;
+  font-style: normal;
+  margin-left: .25em;
+  transition: transform .25s ease;
+}
+.svc-tech-link:hover .svc-tech-link__arrow,
+.svc-tech-link:focus-visible .svc-tech-link__arrow {
+  transform: translate(2px, -2px);
+}
+.svc-tech-link__desc {
+  display: block;
+  max-width: 44ch;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+
 /* ==========================================================================
    Contact / clinic page — handoff doc 06.
    Hero · meta cards · map iframe · 3-up photo strip. Same editorial
@@ -1337,6 +1394,8 @@
   .services-pillar__head { gap: var(--sp-4); }
   .svc-figure { grid-template-columns: 1fr; gap: var(--sp-4); max-width: 460px; }
   .svc-figure__cap { padding-bottom: 0; }
+
+  .svc-tech-link { padding: var(--sp-7) var(--sp-5) var(--sp-6); }
 
   .contact-meta__grid    { grid-template-columns: repeat(2, 1fr); }
   .contact-strip__grid   { grid-template-columns: 1fr 1fr; }
