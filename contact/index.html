@@ -4,13 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ιατρείο · Dr. Τουλής</title>
-  <meta name="description" content="Ιατρείο Dr. Τουλή στη Θεσσαλονίκη — διεύθυνση, τηλέφωνο, ωράριο, online ραντεβού." />
+  <meta name="description" content="Ιατρείο Dr. Τουλή στη Θεσσαλονίκη — Μητροπόλεως 73. Διεύθυνση, τηλέφωνο, ωράριο, online ραντεβού." />
   <link rel="canonical" href="https://www.toulis.gr/contact/" />
   <link rel="alternate" hreflang="el" href="https://www.toulis.gr/contact/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="el_GR" />
   <meta property="og:title" content="Ιατρείο · Dr. Τουλής" />
-  <meta property="og:description" content="Ιατρείο Dr. Τουλή στη Θεσσαλονίκη — διεύθυνση, τηλέφωνο, ωράριο, online ραντεβού." />
+  <meta property="og:description" content="Ιατρείο Dr. Τουλή στη Θεσσαλονίκη — Μητροπόλεως 73. Διεύθυνση, τηλέφωνο, ωράριο, online ραντεβού." />
   <meta property="og:url" content="https://www.toulis.gr/contact/" />
   <meta property="og:image" content="https://www.toulis.gr/assets/images/og-default.jpg" />
   <link rel="icon" href="/assets/images/favicon.ico" sizes="any" />
@@ -19,6 +19,31 @@
   <link rel="stylesheet" href="/assets/css/fonts.css" />
   <link rel="stylesheet" href="/assets/css/tokens.css" />
   <link rel="stylesheet" href="/assets/css/globals.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Ιατρείο Dr. Κωνσταντίνου Α. Τουλή",
+    "url": "https://www.toulis.gr/contact/",
+    "image": "https://www.toulis.gr/assets/images/clinic-office.jpg",
+    "telephone": "+30 2310 222 799",
+    "email": "info@toulis.gr",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Μητροπόλεως 73",
+      "addressLocality": "Θεσσαλονίκη",
+      "postalCode": "546 22",
+      "addressCountry": "GR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.631028,
+      "longitude": 22.944498
+    },
+    "medicalSpecialty": ["Endocrine", "Diabetic"]
+  }
+  </script>
 </head>
 <body>
   <a href="#main" class="skip-link">Μετάβαση στο κύριο περιεχόμενο</a>
@@ -42,11 +67,125 @@
   </header>
 
   <main id="main">
-    <section class="page-shell">
-      <p class="eyebrow">— Ιατρείο —</p>
-      <h1 class="serif">Μητροπόλεως 73, Θεσσαλονίκη</h1>
-      <p>Σκελετός σελίδας — το περιεχόμενο θα προστεθεί στο επόμενο βήμα.</p>
+
+    <!-- ========== Hero ========== -->
+    <section class="contact-hero">
+      <div class="contact-hero__inner">
+        <p class="eyebrow">— Ιατρείο —</p>
+        <h1 class="serif contact-hero__title">
+          Μητροπόλεως 73,<br />
+          <em>Θεσσαλονίκη.</em>
+        </h1>
+        <p class="contact-hero__lede">
+          Το ιδιωτικό ιατρείο βρίσκεται στο κέντρο της πόλης, έναντι
+          της Μητρόπολης, σε σύντομη απόσταση από την Πλατεία
+          Αριστοτέλους. Πλήρης εξοπλισμός με υπερηχοτομογράφο
+          υψηλής ευκρίνειας για άμεση αξιολόγηση θυρεοειδούς.
+        </p>
+      </div>
     </section>
+
+    <!-- ========== Practical info ========== -->
+    <section class="contact-meta">
+      <div class="contact-meta__inner">
+        <ul class="contact-meta__grid">
+          <li class="contact-card">
+            <p class="contact-card__label">Διεύθυνση</p>
+            <p class="contact-card__value">
+              Μητροπόλεως 73<br />
+              546 22 Θεσσαλονίκη
+            </p>
+            <p class="contact-card__sub">Έναντι της Μητρόπολης</p>
+          </li>
+          <li class="contact-card">
+            <p class="contact-card__label">Τηλέφωνο</p>
+            <p class="contact-card__value">
+              <a href="tel:+302310222799">2310 222 799</a>
+            </p>
+            <p class="contact-card__sub">Γραμματεία ιατρείου</p>
+          </li>
+          <li class="contact-card">
+            <p class="contact-card__label">Ωράριο</p>
+            <p class="contact-card__value">
+              Κατόπιν ραντεβού
+            </p>
+            <p class="contact-card__sub">Πρωινά &amp; απογευματινά</p>
+          </li>
+          <li class="contact-card">
+            <p class="contact-card__label">Email</p>
+            <p class="contact-card__value">
+              <a href="mailto:info@toulis.gr">info@toulis.gr</a>
+            </p>
+            <p class="contact-card__sub">Απάντηση εντός 24 ωρών</p>
+          </li>
+        </ul>
+
+        <div class="contact-meta__cta">
+          <a class="contact-meta__book" href="https://appointment-booking.pages.dev" target="_blank" rel="noopener">
+            <span>Online ραντεβού</span>
+            <span aria-hidden="true">→</span>
+          </a>
+          <p class="contact-meta__note">
+            Διαθέσιμο 24/7. Παρακαλούμε ακυρώστε εγκαίρως αν δεν
+            μπορείτε να προσέλθετε.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Map ========== -->
+    <section class="contact-map">
+      <div class="contact-map__inner">
+        <p class="eyebrow">— Πώς θα μας βρείτε —</p>
+        <h2 class="serif contact-map__title">
+          Στο κέντρο, <em>έναντι της Μητρόπολης.</em>
+        </h2>
+        <div class="contact-map__frame">
+          <iframe
+            title="Χάρτης — Μητροπόλεως 73, Θεσσαλονίκη"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24223.58426526471!2d22.944498!3d40.631028!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a839066076e403%3A0x4f24db1655bf09a9!2sMitropoleos+73%2C+Thessaloniki+546+22%2C+Greece!5e0!3m2!1sen!2s!4v1432767182336"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+        <p class="contact-map__caption">
+          <a href="https://maps.google.com/?q=Mitropoleos+73,+Thessaloniki+54622" target="_blank" rel="noopener">
+            Άνοιγμα στο Google Maps →
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== Photo strip ========== -->
+    <section class="contact-strip">
+      <div class="contact-strip__inner">
+        <p class="eyebrow">— Ο χώρος —</p>
+        <h2 class="serif contact-strip__title">
+          Ένας ήρεμος χώρος για ήρεμη συζήτηση.
+        </h2>
+        <ul class="contact-strip__grid">
+          <li class="contact-strip__item">
+            <img src="/assets/images/clinic-storytelling.jpg"
+                 alt="Είσοδος ιατρείου με θέα προς το εξεταστήριο"
+                 width="1200" height="817"
+                 loading="lazy" decoding="async" />
+          </li>
+          <li class="contact-strip__item">
+            <img src="/assets/images/clinic-exam.jpg"
+                 alt="Εξεταστήριο — υπερηχοτομογράφος και κλίνη"
+                 width="675" height="900"
+                 loading="lazy" decoding="async" />
+          </li>
+          <li class="contact-strip__item">
+            <img src="/assets/images/clinic-desk.jpg"
+                 alt="Γραφείο συνεδρίας — συζήτηση με τον ασθενή"
+                 width="675" height="900"
+                 loading="lazy" decoding="async" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">

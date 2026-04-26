@@ -459,12 +459,9 @@
   height: auto;
   display: block;
   border-radius: 18px;
-  /* Honour the source image's natural aspect ratio (the current portrait is
-     near-square). When a 4:5 portrait is uploaded later, swap this to
-     `aspect-ratio: 4 / 5` and add `object-fit: cover`. */
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  background: var(--paper-2); /* visible behind transparent PNG corners */
+  background: var(--paper-2);
 }
 .bio-portrait__meta {
   padding: 20px 20px 8px;
@@ -870,6 +867,264 @@
   color: var(--accent-dark);
 }
 
+/* Editorial figure block — sits at the end of a pillar section to provide
+   one visual moment of evidence (e.g. the one-stop ultrasound shot). */
+.svc-figure {
+  margin: var(--sp-12) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) 1fr;
+  gap: var(--sp-6);
+  align-items: end;
+}
+.svc-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--r-card);
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+.svc-figure__cap {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-2);
+  font-style: italic;
+  padding-bottom: var(--sp-4);
+  max-width: 38ch;
+}
+
+/* ==========================================================================
+   Contact / clinic page — handoff doc 06.
+   Hero · meta cards · map iframe · 3-up photo strip. Same editorial
+   restraint as the rest of the site: serif titles, mono labels,
+   alternating warm tones, generous breathing room.
+   ========================================================================== */
+
+/* ---------- Hero ---------- */
+.contact-hero {
+  padding: var(--sp-24) var(--sp-12) var(--sp-16);
+  background:
+    radial-gradient(ellipse at top right, #f0f5f2 0%, transparent 55%),
+    var(--bg-editor);
+  border-bottom: 1px solid var(--line);
+}
+.contact-hero__inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.contact-hero__title {
+  font-size: clamp(36px, 4.8vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  margin: var(--sp-3) 0 var(--sp-6);
+}
+.contact-hero__title em {
+  font-style: italic;
+  color: var(--accent);
+}
+.contact-hero__lede {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--ink-2);
+  max-width: 62ch;
+  margin: 0;
+}
+
+/* ---------- Practical info / meta cards ---------- */
+.contact-meta {
+  padding: var(--sp-20) var(--sp-12);
+  background: var(--bg-warm);
+  border-bottom: 1px solid var(--line);
+}
+.contact-meta__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.contact-meta__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-6);
+}
+.contact-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  padding: var(--sp-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  box-shadow: var(--shadow-card);
+}
+.contact-card__label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+.contact-card__value {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  line-height: 1.35;
+  color: var(--ink);
+  margin: 0;
+}
+.contact-card__value a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-dash);
+  transition: color 150ms, border-color 150ms;
+}
+.contact-card__value a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+.contact-card__sub {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Booking CTA strip below the cards */
+.contact-meta__cta {
+  margin-top: var(--sp-12);
+  padding-top: var(--sp-8);
+  border-top: 1px dashed var(--line-dash);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-6);
+}
+.contact-meta__book {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-3);
+  background: var(--accent-sage);
+  border: 1px solid var(--accent-sage-border);
+  border-radius: var(--r-pill);
+  padding: var(--sp-4) var(--sp-6);
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--accent-dark);
+  text-decoration: none;
+  transition: background 150ms, border-color 150ms, transform 150ms;
+}
+.contact-meta__book:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+.contact-meta__note {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--muted);
+  max-width: 48ch;
+  margin: 0;
+}
+
+/* ---------- Map ---------- */
+.contact-map {
+  padding: var(--sp-20) var(--sp-12);
+  background: var(--bg-editor);
+  border-bottom: 1px solid var(--line);
+}
+.contact-map__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.contact-map__title {
+  font-size: clamp(26px, 3.4vw, 36px);
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+  margin: var(--sp-3) 0 var(--sp-8);
+  color: var(--ink);
+}
+.contact-map__title em {
+  font-style: italic;
+  color: var(--accent);
+}
+.contact-map__frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--r-card);
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  overflow: hidden;
+  box-shadow: var(--shadow-hero);
+}
+.contact-map__frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.contact-map__caption {
+  margin: var(--sp-4) 0 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+.contact-map__caption a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.contact-map__caption a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Photo strip ---------- */
+.contact-strip {
+  padding: var(--sp-20) var(--sp-12) var(--sp-24);
+  background: var(--bg-warm);
+}
+.contact-strip__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.contact-strip__title {
+  font-size: clamp(24px, 2.8vw, 32px);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin: var(--sp-3) 0 var(--sp-10);
+  color: var(--ink);
+  max-width: 32ch;
+}
+.contact-strip__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: var(--sp-4);
+}
+.contact-strip__item {
+  margin: 0;
+}
+.contact-strip__item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: var(--r-card);
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+}
+.contact-strip__item:first-child img {
+  aspect-ratio: 4 / 3;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .stats__grid    { grid-template-columns: repeat(2, 1fr); }
@@ -888,6 +1143,11 @@
   .services-hero,
   .services-pillar { padding-left: var(--sp-6); padding-right: var(--sp-6); }
   .services-pillar__head { gap: var(--sp-4); }
+
+  .contact-meta__grid    { grid-template-columns: repeat(2, 1fr); }
+  .contact-strip__grid   { grid-template-columns: 1fr 1fr; }
+  .contact-strip__item:first-child  { grid-column: 1 / -1; }
+  .contact-strip__item:first-child img { aspect-ratio: 16 / 9; }
 }
 @media (max-width: 560px) {
   .hero            { padding-top: var(--sp-12); }
@@ -914,4 +1174,18 @@
   .svc-row          { grid-template-columns: 1fr; gap: var(--sp-1); padding: var(--sp-5) 0; }
   .svc-row__num     { padding-top: 0; }
   .services-pillar__head { grid-template-columns: 1fr; gap: var(--sp-3); }
+
+  .contact-hero,
+  .contact-meta,
+  .contact-map,
+  .contact-strip      { padding-left: var(--sp-6); padding-right: var(--sp-6); }
+  .contact-hero       { padding-top: var(--sp-16); padding-bottom: var(--sp-12); }
+  .contact-meta,
+  .contact-map        { padding-top: var(--sp-12); padding-bottom: var(--sp-12); }
+  .contact-strip      { padding-top: var(--sp-12); padding-bottom: var(--sp-16); }
+  .contact-meta__grid { grid-template-columns: 1fr; }
+  .contact-meta__cta  { flex-direction: column; align-items: flex-start; }
+  .contact-strip__grid { grid-template-columns: 1fr; }
+  .contact-strip__item:first-child img { aspect-ratio: 16 / 9; }
+  .contact-map__frame  { aspect-ratio: 4 / 3; }
 }
