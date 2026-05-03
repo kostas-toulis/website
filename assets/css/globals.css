@@ -218,6 +218,35 @@ button:focus-visible,
   max-width: 260px;
 }
 
+/* Continuity mark — homepage-only quiet flourish at the top of the footer.
+   The legacy "Endocrine Consulting" lockup (logo-circle.png) is on a white
+   ground, so we frame it as a small cream-paper "stamp" that reads as
+   intentional letterhead against the dark ink footer. */
+.footer-mark {
+  max-width: 1080px;
+  margin: 0 auto var(--sp-10);
+  padding: 0 var(--sp-12);
+  text-align: center;
+}
+.footer-mark__img {
+  display: inline-block;
+  width: 96px;
+  height: 96px;
+  background: #fcfbf7;
+  padding: 12px;
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22);
+  object-fit: contain;
+}
+.footer-mark__caption {
+  margin-top: var(--sp-3);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8a968f;
+}
+
 .footer-grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr;

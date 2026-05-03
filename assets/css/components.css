@@ -24,6 +24,9 @@
 }
 .hero__eyebrow {
   margin-top: var(--sp-6);
+  /* Hero-only emphasis: deep accent green + slightly wider tracking on Greek caps */
+  color: var(--accent);
+  letter-spacing: 0.20em;
 }
 .hero__title {
   margin: var(--sp-6) 0;
@@ -1372,6 +1375,69 @@
 }
 .notes-outro__text a:hover {
   border-bottom-color: var(--accent);
+}
+
+/* ==========================================================================
+   Legal pages — terms / privacy.
+   Long-form prose at a comfortable reading measure with clear hierarchy.
+   ========================================================================== */
+.legal {
+  padding: var(--sp-16) var(--sp-12) var(--sp-20);
+  background: var(--bg-editor);
+}
+.legal__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.legal__title {
+  font-size: clamp(36px, 5vw, 56px);
+  margin: var(--sp-3) 0 var(--sp-2);
+}
+.legal__updated {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 0 0 var(--sp-10);
+}
+.legal__lede {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--ink-2);
+  margin: 0 0 var(--sp-10);
+}
+.legal h2 {
+  font-size: 22px;
+  margin: var(--sp-10) 0 var(--sp-3);
+  color: var(--ink);
+}
+.legal p,
+.legal ul {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--ink-2);
+  margin: 0 0 var(--sp-4);
+}
+.legal ul {
+  padding-left: var(--sp-6);
+}
+.legal li {
+  margin-bottom: var(--sp-2);
+}
+.legal a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-dash);
+}
+.legal a:hover {
+  border-bottom-color: var(--accent);
+}
+.legal__contact {
+  margin-top: var(--sp-10);
+  padding-top: var(--sp-6);
+  border-top: 1px dashed var(--line);
+  font-size: 14px;
+  color: var(--muted);
 }
 
 /* ---------- Responsive ---------- */

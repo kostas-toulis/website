@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="/assets/css/globals.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
 
-  <!-- Physician schema (homepage only) — values marked TODO must be filled before ship -->
+  <!-- Physician schema — homepage only -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -45,19 +45,14 @@
       "@type": "PostalAddress",
       "streetAddress": "Μητροπόλεως 73",
       "addressLocality": "Θεσσαλονίκη",
-      "postalCode": "546 23",
+      "postalCode": "546 22",
       "addressCountry": "GR"
     },
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "09:00", "closes": "14:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "17:30", "closes": "20:30"
+        "dayOfWeek": ["Monday","Tuesday","Thursday","Friday"],
+        "opens": "16:00", "closes": "20:30"
       }
     ]
   }
@@ -83,7 +78,6 @@
         <li><a href="/contact/">Ιατρείο</a></li>
       </ul>
       <span class="nav__lang" aria-label="Γλώσσα"><b>EL</b> / EN</span>
-      <!-- TODO(owner): confirm booking URL — current legacy app at appointment-booking.pages.dev -->
       <a class="nav__cta" href="https://appointment-booking.pages.dev" target="_blank" rel="noopener">Κλείστε ραντεβού</a>
     </nav>
   </header>
@@ -99,7 +93,7 @@
           Dr. Κωνσταντίνος<br />Α. Τουλής
         </h1>
         <p class="hero__sub">
-          Ιδιωτικό ιατρείο στη Θεσσαλονίκη — για ασθενείς που αναζητούν εξειδικευμένη, τεκμηριωμένη ενδοκρινολογική φροντίδα.
+          Ιδιωτικό ιατρείο στη Θεσσαλονίκη — για ενημερωμένους ασθενείς που αναζητούν εξειδικευμένη, τεκμηριωμένη ενδοκρινολογική φροντίδα.
         </p>
         <div class="hero__actions">
           <a class="btn btn--primary" href="https://appointment-booking.pages.dev" target="_blank" rel="noopener">Κλείστε ραντεβού</a>
@@ -130,12 +124,11 @@
             <div class="stat-card__cap">Fellow, American College of Endocrinology</div>
           </div>
         </div>
-        <div class="creds" role="list" aria-label="Επιπλέον τίτλοι">
-          <span class="creds__label">Επιπλέον τίτλοι:</span>
+        <div class="creds" role="list" aria-label="Επιπρόσθετοι Τίτλοι">
+          <span class="creds__label">Επιπρόσθετοι Τίτλοι:</span>
           <span class="cred-pill" role="listitem">MSc (Res)</span>
           <span class="cred-pill" role="listitem">MSc (HCM)</span>
           <span class="cred-pill" role="listitem">MD</span>
-          <span class="cred-pill" role="listitem">Birmingham · CEDAM</span>
         </div>
       </div>
     </section>
@@ -234,7 +227,7 @@
             <span class="practice-card__label">Πώς θα έρθετε</span>
             <h3 class="practice-card__title">Στο κέντρο<br />της Θεσσαλονίκης</h3>
             <p class="practice-card__desc">
-              Στο ύψος της Αγ. Σοφίας, δύο λεπτά με τα πόδια από τον σταθμό ΟΑΣΘ. Πρόσβαση για ΑμεΑ.
+              Στο ύψος της Ιεράς Μητρόπολης Θεσσαλονίκης, ακριβώς απέναντι της στάσης ΟΑΣΘ «Μητρόπολη». Πρόσβαση για ΑμεΑ.
             </p>
             <span class="practice-card__cta">Ανοίξτε στο Google Maps →</span>
           </a>
@@ -243,7 +236,7 @@
         <div class="practice__meta">
           <div class="meta-card">
             <p class="meta-card__label">Ωράριο</p>
-            <p class="meta-card__value">Δευτέρα – Παρασκευή<br />09:00 – 14:00 · 17:30 – 20:30</p>
+            <p class="meta-card__value">Δευ–Παρ, εκτός Τετάρτης<br />16:00 – 20:30</p>
           </div>
           <div class="meta-card">
             <p class="meta-card__label">Τηλέφωνο</p>
@@ -260,6 +253,17 @@
   </main>
 
   <footer class="site-footer">
+    <!-- Continuity mark: the original Endocrine Consulting lockup, kept on the
+         homepage only as a quiet bridge from the previous brand. The trimmed
+         atoms-mark in the nav remains the working monogram across the site. -->
+    <div class="footer-mark" aria-hidden="true">
+      <img src="/assets/images/logo-circle.png"
+           alt=""
+           class="footer-mark__img"
+           width="160" height="160"
+           loading="lazy" decoding="async" />
+      <p class="footer-mark__caption">Από το προηγούμενο σήμα — Endocrine Consulting</p>
+    </div>
     <div class="footer-grid">
       <div>
         <a href="/" class="nav__logo">
@@ -289,8 +293,7 @@
         <h4>Ακαδημαϊκό</h4>
         <ul>
           <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=toulis+k&amp;sort=pubdate" target="_blank" rel="noopener">PubMed →</a></li>
-          <li><a href="#" aria-disabled="true">ORCID →</a></li>
-          <li><a href="#" aria-disabled="true">Google Scholar →</a></li>
+          <li><a href="https://scholar.google.com/citations?hl=en&amp;user=qf2jNAgAAAAJ&amp;view_op=list_works" target="_blank" rel="noopener">Google Scholar →</a></li>
         </ul>
       </nav>
     </div>
