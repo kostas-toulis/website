@@ -30,22 +30,6 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Είμαι στο ταμείο του ΕΟΠΥΥ, θα χρεωθώ τις εργαστηριακές εξετάσεις ξεχωριστά;",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Όχι, το ιατρείο είναι πιστοποιημένο με τον ΕΟΠΥΥ, που σημαίνει ότι οι εργαστηριακές εξετάσεις πραγματοποιούνται σε συμβεβλημένα με τον ΕΟΠΥΥ εργαστήρια με την προβλεπόμενη συμμετοχή. Το ίδιο ισχύει και για τις συνταγές για φαρμακευτική αγωγή. Η μοναδική χρέωση αφορά την επίσκεψη στο ιατρείο."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Υπάρχουν συμβάσεις με ταμεία;",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Υπάρχει σύμβαση με το ΥΠΕΘΑ, όπου ο ασφαλισμένος δεν χρεώνεται τίποτα επιπλέον."
-        }
-      },
-      {
-        "@type": "Question",
         "name": "Πώς είναι δυνατό να μετράω θυρεοειδικές ορμόνες στο αίμα και να είναι φυσιολογικές, και να έχω όζους στον θυρεοειδή;",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -123,6 +107,22 @@
           "@type": "Answer",
           "text": "Όχι. Ειδική αντιοστεοπορωτική αγωγή — πέρα της υποκατάστασης με ασβέστιο και βιταμίνη D — δεν ενδείκνυται στη μεγάλη πλειοψηφία των περιπτώσεων. Σε ορισμένες περιπτώσεις, κυρίως σε έντονο οστικό καταβολισμό και σε ειδικές συνυπάρχουσες παθήσεις, η πιθανότητα για κάταγμα κρίνεται υψηλή και είναι δυνατό να προταθεί αγωγή."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Είμαι στο ταμείο του ΕΟΠΥΥ, θα χρεωθώ τις εργαστηριακές εξετάσεις ξεχωριστά;",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Όχι, το ιατρείο είναι πιστοποιημένο με τον ΕΟΠΥΥ, που σημαίνει ότι οι εργαστηριακές εξετάσεις πραγματοποιούνται σε συμβεβλημένα με τον ΕΟΠΥΥ εργαστήρια με την προβλεπόμενη συμμετοχή. Το ίδιο ισχύει και για τις συνταγές για φαρμακευτική αγωγή. Η μοναδική χρέωση αφορά την επίσκεψη στο ιατρείο."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Υπάρχουν συμβάσεις με ταμεία;",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Υπάρχει σύμβαση με το ΥΠΕΘΑ."
+        }
       }
     ]
   }
@@ -165,61 +165,22 @@
           την εξατομικευμένη ιατρική εκτίμηση.
         </p>
         <nav class="notes-jump" aria-label="Κατηγορίες">
-          <a href="#group-practical">Πρακτικά</a>
           <a href="#group-thyroid">Θυρεοειδής</a>
           <a href="#group-diabetes">Διαβήτης &amp; βάρος</a>
           <a href="#group-reproductive">Ορμόνες</a>
           <a href="#group-pediatric-bones">Παιδιά &amp; οστά</a>
+          <a href="#group-practical">Πρακτικά</a>
         </nav>
       </div>
-    </section>
-
-    <!-- ========== Πρακτικά (admin / billing) ========== -->
-    <section class="notes-group" id="group-practical" aria-labelledby="grp-practical-h">
+    </section>    <!-- ========== Θυρεοειδής ========== -->
+    <section class="notes-group" id="group-thyroid" aria-labelledby="grp-thyroid-h">
       <div class="notes-group__inner">
-        <p class="notes-group__label">Α · Πρακτικά</p>
-        <h2 class="serif notes-group__title" id="grp-practical-h">Διαδικαστικά &amp; ταμεία.</h2>
+        <p class="notes-group__label">Α · Θυρεοειδής</p>
+        <h2 class="serif notes-group__title" id="grp-thyroid-h">Όζοι, ορμόνες, παρακέντηση.</h2>
         <ol class="faq">
 
-          <li class="faq__item" id="q-eopyy">
-            <span class="faq__num" aria-hidden="true">01</span>
-            <article class="faq__body">
-              <h3 class="faq__q serif">Είμαι στο ταμείο του ΕΟΠΥΥ — θα χρεωθώ τις εργαστηριακές εξετάσεις ξεχωριστά;</h3>
-              <p class="faq__a">
-                Όχι. Το ιατρείο είναι πιστοποιημένο με τον ΕΟΠΥΥ, που σημαίνει
-                ότι οι εργαστηριακές εξετάσεις πραγματοποιούνται σε
-                συμβεβλημένα με τον ΕΟΠΥΥ εργαστήρια με την προβλεπόμενη
-                συμμετοχή. Το ίδιο ισχύει και για τις συνταγές για
-                φαρμακευτική αγωγή. Η μοναδική χρέωση αφορά την επίσκεψη
-                στο ιατρείο.
-              </p>
-            </article>
-          </li>
-
-          <li class="faq__item" id="q-ypetha">
-            <span class="faq__num" aria-hidden="true">02</span>
-            <article class="faq__body">
-              <h3 class="faq__q serif">Υπάρχουν συμβάσεις με ταμεία;</h3>
-              <p class="faq__a">
-                Υπάρχει σύμβαση με το ΥΠΕΘΑ, όπου ο ασφαλισμένος δεν
-                χρεώνεται τίποτα επιπλέον.
-              </p>
-            </article>
-          </li>
-
-        </ol>
-      </div>
-    </section>
-
-    <!-- ========== Θυρεοειδής ========== -->
-    <section class="notes-group notes-group--alt" id="group-thyroid" aria-labelledby="grp-thyroid-h">
-      <div class="notes-group__inner">
-        <p class="notes-group__label">Β · Θυρεοειδής</p>
-        <h2 class="serif notes-group__title" id="grp-thyroid-h">Όζοι, ορμόνες, παρακέντηση.</h2>
-        <ol class="faq" start="3">
-
           <li class="faq__item" id="q-thyroid-nodules-vs-function">
-            <span class="faq__num" aria-hidden="true">03</span>
+            <span class="faq__num" aria-hidden="true">01</span>
             <article class="faq__body">
               <h3 class="faq__q serif">Πώς είναι δυνατό να μετράω θυρεοειδικές ορμόνες στο αίμα και να είναι φυσιολογικές, και να έχω όζους στον θυρεοειδή;</h3>
               <p class="faq__a">
@@ -238,7 +199,7 @@
           </li>
 
           <li class="faq__item" id="q-thyroid-fertility">
-            <span class="faq__num" aria-hidden="true">04</span>
+            <span class="faq__num" aria-hidden="true">02</span>
             <article class="faq__body">
               <h3 class="faq__q serif">Έχω πρόβλημα με τον θυρεοειδή — θα μπορώ να κάνω παιδιά;</h3>
               <p class="faq__a">
@@ -253,7 +214,7 @@
           </li>
 
           <li class="faq__item" id="q-fna-what">
-            <span class="faq__num" aria-hidden="true">05</span>
+            <span class="faq__num" aria-hidden="true">03</span>
             <article class="faq__body">
               <h3 class="faq__q serif">Τι είναι η παρακέντηση θυρεοειδούς;</h3>
               <p class="faq__a">
@@ -272,7 +233,7 @@
           </li>
 
           <li class="faq__item" id="q-fna-pain">
-            <span class="faq__num" aria-hidden="true">06</span>
+            <span class="faq__num" aria-hidden="true">04</span>
             <article class="faq__body">
               <h3 class="faq__q serif">Είναι επώδυνη η διαδικασία παρακέντησης του θυρεοειδούς;</h3>
               <p class="faq__a">
@@ -291,14 +252,14 @@
     </section>
 
     <!-- ========== Διαβήτης & βάρος ========== -->
-    <section class="notes-group" id="group-diabetes" aria-labelledby="grp-diabetes-h">
+    <section class="notes-group notes-group--alt" id="group-diabetes" aria-labelledby="grp-diabetes-h">
       <div class="notes-group__inner">
-        <p class="notes-group__label">Γ · Διαβήτης &amp; βάρος</p>
+        <p class="notes-group__label">Β · Διαβήτης &amp; βάρος</p>
         <h2 class="serif notes-group__title" id="grp-diabetes-h">Πρόγνωση, κύηση, φαρμακευτικές επιλογές.</h2>
-        <ol class="faq" start="7">
+        <ol class="faq" start="5">
 
           <li class="faq__item" id="q-diabetes-prognosis">
-            <span class="faq__num" aria-hidden="true">07</span>
+            <span class="faq__num" aria-hidden="true">05</span>
             <article class="faq__body">
               <h3 class="faq__q serif">Έχω διαγνωσθεί πρόσφατα με Σακχαρώδη Διαβήτη και παίρνω αγωγή — θα έχω για πάντα πρόβλημα;</h3>
               <p class="faq__a">
@@ -315,7 +276,7 @@
           </li>
 
           <li class="faq__item" id="q-gestational-diabetes-insulin">
-            <span class="faq__num" aria-hidden="true">08</span>
+            <span class="faq__num" aria-hidden="true">06</span>
             <article class="faq__body">
               <h3 class="faq__q serif">Έχω εμφανίσει Σακχαρώδη Διαβήτη της Κύησης — πρέπει να πάρω ινσουλίνη;</h3>
               <p class="faq__a">
@@ -330,7 +291,7 @@
           </li>
 
           <li class="faq__item" id="q-weight-meds">
-            <span class="faq__num" aria-hidden="true">09</span>
+            <span class="faq__num" aria-hidden="true">07</span>
             <article class="faq__body">
               <h3 class="faq__q serif">Υπάρχει φαρμακευτική αγωγή για να χάσω κιλά;</h3>
               <p class="faq__a">
@@ -352,14 +313,14 @@
     </section>
 
     <!-- ========== Ορμόνες — αναπαραγωγικό ========== -->
-    <section class="notes-group notes-group--alt" id="group-reproductive" aria-labelledby="grp-reproductive-h">
+    <section class="notes-group" id="group-reproductive" aria-labelledby="grp-reproductive-h">
       <div class="notes-group__inner">
-        <p class="notes-group__label">Δ · Ορμόνες</p>
+        <p class="notes-group__label">Γ · Ορμόνες</p>
         <h2 class="serif notes-group__title" id="grp-reproductive-h">Σημεία &amp; συμπτώματα ορμονικής διαταραχής.</h2>
-        <ol class="faq" start="10">
+        <ol class="faq" start="8">
 
           <li class="faq__item" id="q-hirsutism">
-            <span class="faq__num" aria-hidden="true">10</span>
+            <span class="faq__num" aria-hidden="true">08</span>
             <article class="faq__body">
               <h3 class="faq__q serif">Έχω παρατηρήσει αυξημένη τριχοφυία. Είναι θέμα ορμονών;</h3>
               <p class="faq__a">
@@ -380,14 +341,14 @@
     </section>
 
     <!-- ========== Παιδιά & οστά ========== -->
-    <section class="notes-group" id="group-pediatric-bones" aria-labelledby="grp-bones-h">
+    <section class="notes-group notes-group--alt" id="group-pediatric-bones" aria-labelledby="grp-bones-h">
       <div class="notes-group__inner">
-        <p class="notes-group__label">Ε · Παιδιά &amp; οστά</p>
+        <p class="notes-group__label">Δ · Παιδιά &amp; οστά</p>
         <h2 class="serif notes-group__title" id="grp-bones-h">Ανάπτυξη &amp; οστική υγεία.</h2>
-        <ol class="faq" start="11">
+        <ol class="faq" start="9">
 
           <li class="faq__item" id="q-child-height">
-            <span class="faq__num" aria-hidden="true">11</span>
+            <span class="faq__num" aria-hidden="true">09</span>
             <article class="faq__body">
               <h3 class="faq__q serif">Παρατηρώ ότι το παιδί έχει το χαμηλότερο ύψος στην τάξη του. Πρέπει να ανησυχήσω;</h3>
               <p class="faq__a">
@@ -404,7 +365,7 @@
           </li>
 
           <li class="faq__item" id="q-osteopenia">
-            <span class="faq__num" aria-hidden="true">12</span>
+            <span class="faq__num" aria-hidden="true">10</span>
             <article class="faq__body">
               <h3 class="faq__q serif">Έχω κάνει μέτρηση οστικής πυκνότητας και μου είπαν ότι έχω οστεοπενία. Πρέπει να πάρω αντιοστεοπορωτική αγωγή;</h3>
               <p class="faq__a">
@@ -424,6 +385,44 @@
         </ol>
       </div>
     </section>
+
+    <!-- ========== Πρακτικά (admin / billing) ========== -->
+    <section class="notes-group" id="group-practical" aria-labelledby="grp-practical-h">
+      <div class="notes-group__inner">
+        <p class="notes-group__label">Ε · Πρακτικά</p>
+        <h2 class="serif notes-group__title" id="grp-practical-h">Διαδικαστικά &amp; ταμεία.</h2>
+        <ol class="faq" start="11">
+
+          <li class="faq__item" id="q-eopyy">
+            <span class="faq__num" aria-hidden="true">11</span>
+            <article class="faq__body">
+              <h3 class="faq__q serif">Είμαι στο ταμείο του ΕΟΠΥΥ — θα χρεωθώ τις εργαστηριακές εξετάσεις ξεχωριστά;</h3>
+              <p class="faq__a">
+                Όχι. Το ιατρείο είναι πιστοποιημένο με τον ΕΟΠΥΥ, που σημαίνει
+                ότι οι εργαστηριακές εξετάσεις πραγματοποιούνται σε
+                συμβεβλημένα με τον ΕΟΠΥΥ εργαστήρια με την προβλεπόμενη
+                συμμετοχή. Το ίδιο ισχύει και για τις συνταγές για
+                φαρμακευτική αγωγή. Η μοναδική χρέωση αφορά την επίσκεψη
+                στο ιατρείο.
+              </p>
+            </article>
+          </li>
+
+          <li class="faq__item" id="q-ypetha">
+            <span class="faq__num" aria-hidden="true">12</span>
+            <article class="faq__body">
+              <h3 class="faq__q serif">Υπάρχουν συμβάσεις με ταμεία;</h3>
+              <p class="faq__a">
+                Υπάρχει σύμβαση με το ΥΠΕΘΑ.
+              </p>
+            </article>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+
 
     <!-- ========== Outro / disclaimer ========== -->
     <section class="notes-outro">
