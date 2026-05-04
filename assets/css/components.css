@@ -1440,6 +1440,222 @@
   color: var(--muted);
 }
 
+/* ==========================================================================
+   Patient resources hub — /resources/
+   Editorial hub: hero + indexed list of explainer cards.
+   ========================================================================== */
+.resources-hero {
+  padding: var(--sp-16) var(--sp-12) var(--sp-12);
+  background: var(--bg-warm);
+}
+.resources-hero__inner {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.resources-hero__title {
+  font-size: clamp(40px, 6vw, 64px);
+  margin: var(--sp-3) 0 var(--sp-6);
+}
+.resources-hero__title em {
+  font-style: italic;
+  color: var(--accent);
+}
+.resources-hero__lede {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--ink-2);
+  max-width: 60ch;
+}
+
+.resources {
+  padding: var(--sp-12) var(--sp-12) var(--sp-20);
+  background: var(--bg-editor);
+}
+.resources__inner {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.resources__title {
+  font-size: clamp(28px, 3.4vw, 36px);
+  margin: var(--sp-3) 0 var(--sp-10);
+}
+.resources-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--sp-6);
+}
+.resources-card {
+  border-top: 1px solid var(--line);
+  padding-top: var(--sp-6);
+}
+.resources-card:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+.resources-card__link {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: var(--sp-6);
+  align-items: start;
+  text-decoration: none;
+  color: inherit;
+  padding: var(--sp-4) 0;
+  transition: opacity .2s ease;
+}
+.resources-card__link:hover,
+.resources-card__link:focus-visible {
+  opacity: .85;
+}
+.resources-card__num {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  padding-top: 6px;
+}
+.resources-card__kicker {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 var(--sp-2);
+}
+.resources-card__title {
+  font-size: clamp(22px, 2.6vw, 28px);
+  margin: 0 0 var(--sp-2);
+  line-height: 1.2;
+  color: var(--ink);
+}
+.resources-card__title em {
+  font-style: italic;
+  color: var(--accent);
+}
+.resources-card__desc {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: var(--ink-2);
+  margin: 0 0 var(--sp-3);
+  max-width: 56ch;
+}
+.resources-card__cta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+.resources__planned {
+  margin-top: var(--sp-12);
+  padding: var(--sp-5) var(--sp-6);
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+/* ==========================================================================
+   Long-form patient essay — child pages under /resources/
+   Comfortable measure, clear hierarchy, related links + back-up affordance.
+   ========================================================================== */
+.essay {
+  padding: var(--sp-16) var(--sp-12) var(--sp-20);
+  background: var(--bg-editor);
+}
+.essay__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.essay__crumb {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-dash);
+}
+.essay__crumb:hover { border-bottom-color: var(--accent); }
+.essay__title {
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.05;
+  margin: var(--sp-3) 0 var(--sp-3);
+}
+.essay__title em {
+  font-style: italic;
+  color: var(--accent);
+}
+.essay__sub {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 0 0 var(--sp-10);
+}
+.essay__lede {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--ink-2);
+  margin: 0 0 var(--sp-10);
+}
+.essay h2 {
+  font-size: 24px;
+  margin: var(--sp-12) 0 var(--sp-3);
+  color: var(--ink);
+}
+.essay p,
+.essay ul {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--ink-2);
+  margin: 0 0 var(--sp-4);
+}
+.essay ul {
+  padding-left: var(--sp-6);
+}
+.essay li {
+  margin-bottom: var(--sp-3);
+}
+.essay__draft-note {
+  margin-top: var(--sp-10);
+  padding: var(--sp-5) var(--sp-6);
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--muted);
+  background: var(--paper);
+}
+.essay__draft-note strong { color: var(--ink-2); font-weight: 600; }
+.essay__related {
+  margin-top: var(--sp-12);
+  padding-top: var(--sp-8);
+  border-top: 1px dashed var(--line);
+}
+.essay__related ul {
+  list-style: none;
+  padding: 0;
+}
+.essay__related li {
+  margin-bottom: var(--sp-2);
+}
+.essay__related a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-dash);
+}
+.essay__related a:hover { border-bottom-color: var(--accent); }
+.essay__back {
+  margin-top: var(--sp-10);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+.essay__back a {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line-dash);
+}
+.essay__back a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .stats__grid    { grid-template-columns: repeat(2, 1fr); }
@@ -1473,6 +1689,11 @@
   .notes-hero,
   .notes-group,
   .notes-outro { padding-left: var(--sp-6); padding-right: var(--sp-6); }
+
+  .resources-hero,
+  .resources,
+  .essay { padding-left: var(--sp-6); padding-right: var(--sp-6); }
+  .resources-card__link { grid-template-columns: 40px 1fr; gap: var(--sp-4); }
 }
 @media (max-width: 560px) {
   .hero            { padding-top: var(--sp-12); }

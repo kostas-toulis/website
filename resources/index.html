@@ -4,13 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Πηγές για ασθενείς · Dr. Τουλής</title>
-  <meta name="description" content="Οδηγίες προετοιμασίας εξετάσεων, ημερολόγια καταγραφής και άλλα υλικά." />
+  <meta name="description" content="Επεξηγηματικά κείμενα και οδηγίες προετοιμασίας εξετάσεων για ασθενείς — παρακέντηση θυρεοειδούς, εξετάσεις, ημερολόγια καταγραφής." />
   <link rel="canonical" href="https://www.toulis.gr/resources/" />
   <link rel="alternate" hreflang="el" href="https://www.toulis.gr/resources/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="el_GR" />
   <meta property="og:title" content="Πηγές για ασθενείς · Dr. Τουλής" />
-  <meta property="og:description" content="Οδηγίες προετοιμασίας εξετάσεων, ημερολόγια καταγραφής και άλλα υλικά." />
+  <meta property="og:description" content="Επεξηγηματικά κείμενα και οδηγίες προετοιμασίας εξετάσεων για ασθενείς." />
   <meta property="og:url" content="https://www.toulis.gr/resources/" />
   <meta property="og:image" content="https://www.toulis.gr/assets/images/og-default.jpg" />
   <link rel="icon" href="/assets/images/favicon.ico" sizes="any" />
@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="/assets/css/fonts.css" />
   <link rel="stylesheet" href="/assets/css/tokens.css" />
   <link rel="stylesheet" href="/assets/css/globals.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
 </head>
 <body>
   <a href="#main" class="skip-link">Μετάβαση στο κύριο περιεχόμενο</a>
@@ -42,11 +43,53 @@
   </header>
 
   <main id="main">
-    <section class="page-shell">
-      <p class="eyebrow">— Πηγές για ασθενείς —</p>
-      <h1 class="serif">Πηγές για ασθενείς</h1>
-      <p>Σκελετός σελίδας — το περιεχόμενο θα προστεθεί στο επόμενο βήμα.</p>
+
+    <!-- ===== Hero ===== -->
+    <section class="resources-hero">
+      <div class="resources-hero__inner">
+        <p class="eyebrow">— Πηγές για ασθενείς —</p>
+        <h1 class="serif resources-hero__title">
+          Πηγές <em>για ασθενείς</em>.
+        </h1>
+        <p class="resources-hero__lede">
+          Επεξηγηματικά κείμενα και οδηγίες σε γλώσσα κατανοητή —
+          τι είναι μια εξέταση, τι περιμένουμε από αυτήν, πώς προετοιμάζεστε.
+          Ενημερώνεται κατά τις ανάγκες του ιατρείου.
+        </p>
+      </div>
     </section>
+
+    <!-- ===== Resources list ===== -->
+    <section class="resources">
+      <div class="resources__inner">
+        <p class="eyebrow">— Επεξηγηματικά κείμενα —</p>
+        <h2 class="serif resources__title">Διαβάστε αναλυτικά</h2>
+
+        <ol class="resources-list">
+          <li class="resources-card">
+            <a class="resources-card__link" href="/resources/parakentisi-thyroeidous/">
+              <span class="resources-card__num" aria-hidden="true">01</span>
+              <div class="resources-card__body">
+                <p class="resources-card__kicker">Διαγνωστική διαδικασία</p>
+                <h3 class="resources-card__title serif">
+                  Παρακέντηση θυρεοειδούς <em>δια λεπτής βελόνης (FNA)</em>
+                </h3>
+                <p class="resources-card__desc">
+                  Τι είναι, γιατί και πότε χρειάζεται, πόσο επώδυνη είναι, πόσο διαρκεί.
+                </p>
+                <span class="resources-card__cta">Διαβάστε αναλυτικά →</span>
+              </div>
+            </a>
+          </li>
+        </ol>
+
+        <p class="resources__planned">
+          Σύντομα προστίθενται: οδηγίες προετοιμασίας για εργαστηριακές εξετάσεις,
+          ημερολόγιο καταγραφής γλυκόζης, ημερολόγιο αρτηριακής πίεσης.
+        </p>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
