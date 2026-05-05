@@ -4,22 +4,106 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>404 — Δεν βρέθηκε · Dr. Τουλής</title>
-  <meta name="robots" content="noindex" />
+  <meta name="description" content="Η σελίδα που ζητήσατε δεν βρέθηκε. Επιστρέψτε στην αρχική ή επιλέξτε από τις κύριες ενότητες." />
+  <meta name="robots" content="noindex,follow" />
+  <!-- No canonical: 404 represents an arbitrary unresolved URL; pointing canonical
+       elsewhere would mislead crawlers into treating this as a live page. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="el_GR" />
+  <meta property="og:title" content="404 — Δεν βρέθηκε · Dr. Τουλής" />
+  <meta property="og:description" content="Η σελίδα που ζητήσατε δεν βρέθηκε." />
+  <meta property="og:url" content="https://www.toulis.gr/" />
+  <meta property="og:image" content="https://www.toulis.gr/assets/images/og-default.jpg" />
   <link rel="icon" href="/assets/images/favicon.ico" sizes="any" />
-  <link rel="stylesheet" href="/assets/css/fonts.css" />
-  <link rel="stylesheet" href="/assets/css/tokens.css" />
-  <link rel="stylesheet" href="/assets/css/globals.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/toulis_favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/source-serif-4-500-greek.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-400-greek.woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fonts.min.css" />
+  <link rel="stylesheet" href="/assets/css/tokens.min.css" />
+  <link rel="stylesheet" href="/assets/css/globals.min.css" />
+  <link rel="stylesheet" href="/assets/css/components.min.css" />
 </head>
 <body>
+  <a href="#main" class="skip-link">Μετάβαση στο κύριο περιεχόμενο</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Κύρια πλοήγηση">
+      <a href="/" class="nav__logo">
+        <img src="/assets/images/toulis-atoms.svg" alt="" class="nav__logo-mark" width="36" height="36" />
+        <span>Dr. Τουλής<small>Ενδοκρινολόγος · Διαβητολόγος</small></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="/biography/">Βιογραφικό</a></li>
+        <li><a href="/services/">Υπηρεσίες</a></li>
+        <li><a href="/notes/">Σημειώσεις</a></li>
+        <li><a href="/resources/">Πηγές</a></li>
+        <li><a href="/contact/">Ιατρείο</a></li>
+      </ul>
+      <span class="nav__lang" aria-label="Γλώσσα"><b>EL</b> / EN</span>
+      <a class="nav__cta" href="https://appointment-booking.pages.dev" target="_blank" rel="noopener">Κλείστε ραντεβού</a>
+    </nav>
+  </header>
+
   <main id="main">
     <section class="page-shell">
-      <p class="eyebrow">404</p>
+      <p class="eyebrow">— 404 —</p>
       <h1 class="serif">Η σελίδα δεν βρέθηκε.</h1>
-      <p>Ίσως η διεύθυνση να άλλαξε ή να έγινε λάθος πληκτρολόγηση.</p>
-      <p style="margin-top: var(--sp-6);">
-        <a class="nav__cta" href="/">Επιστροφή στην αρχική</a>
+      <p>
+        Η διεύθυνση που ζητήσατε δεν υπάρχει — ίσως άλλαξε ή έγινε λάθος
+        πληκτρολόγηση. Συνεχίστε από κάποιο από τα παρακάτω:
+      </p>
+      <ul class="page-shell__links">
+        <li><a href="/">Αρχική σελίδα</a></li>
+        <li><a href="/services/">Υπηρεσίες</a></li>
+        <li><a href="/notes/">Συχνές ερωτήσεις (Σημειώσεις)</a></li>
+        <li><a href="/resources/">Πηγές για ασθενείς</a></li>
+        <li><a href="/contact/">Στοιχεία ιατρείου</a></li>
+      </ul>
+      <p class="page-shell__cta">
+        <a class="btn btn--primary" href="https://appointment-booking.pages.dev" target="_blank" rel="noopener">Κλείστε ραντεβού online</a>
       </p>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <a href="/" class="nav__logo">
+          <img src="/assets/images/toulis-atoms.svg" alt="" class="nav__logo-mark" width="36" height="36" />
+          <span>Dr. Κωνσταντίνος Α. Τουλής<small>Ενδοκρινολόγος · Διαβητολόγος</small></span>
+        </a>
+        <p class="footer__tag">Ιδιωτικό ιατρείο, Θεσσαλονίκη.</p>
+      </div>
+      <nav aria-label="Περιεχόμενο">
+        <h3>Περιεχόμενο</h3>
+        <ul>
+          <li><a href="/biography/">Βιογραφικό</a></li>
+          <li><a href="/services/">Υπηρεσίες</a></li>
+          <li><a href="/notes/">Σημειώσεις</a></li>
+          <li><a href="/resources/">Πηγές για ασθενείς</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Ιατρείο">
+        <h3>Ιατρείο</h3>
+        <ul>
+          <li>Μητροπόλεως 73</li>
+          <li><a href="tel:+302310222799">2310 222 799</a></li>
+          <li><a href="mailto:info@toulis.gr">info@toulis.gr</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Ακαδημαϊκό">
+        <h3>Ακαδημαϊκό</h3>
+        <ul>
+          <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=toulis+k&amp;sort=pubdate" target="_blank" rel="noopener">PubMed →</a></li>
+          <li><a href="https://scholar.google.com/citations?hl=en&amp;user=qf2jNAgAAAAJ&amp;view_op=list_works" target="_blank" rel="noopener">Google Scholar →</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bar">
+      <span>© 2026 Dr. Κωνσταντίνος Α. Τουλής</span>
+      <span><a href="/legal/terms/">Όροι χρήσης</a> · <a href="/legal/privacy/">Πολιτική απορρήτου</a></span>
+    </div>
+  </footer>
 </body>
 </html>

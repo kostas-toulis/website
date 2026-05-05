@@ -8,7 +8,7 @@
   /* ── Ink (text) ── */
   --ink:        #1a1f24;   /* body text, headlines */
   --ink-2:      #3b4550;   /* secondary prose */
-  --muted:      #6b7682;   /* metadata, eyebrows */
+  --muted:      #5e6873;   /* metadata, eyebrows — WCAG 2.2 AA-tuned */
 
   /* ── Paper (backgrounds) ── */
   --paper:      #f5f2ea;   /* section backgrounds */

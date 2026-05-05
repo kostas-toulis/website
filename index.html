@@ -24,10 +24,12 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="/assets/css/fonts.css" />
-  <link rel="stylesheet" href="/assets/css/tokens.css" />
-  <link rel="stylesheet" href="/assets/css/globals.css" />
-  <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/source-serif-4-500-greek.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-400-greek.woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fonts.min.css" />
+  <link rel="stylesheet" href="/assets/css/tokens.min.css" />
+  <link rel="stylesheet" href="/assets/css/globals.min.css" />
+  <link rel="stylesheet" href="/assets/css/components.min.css" />
 
   <!-- Physician schema — homepage only -->
   <script type="application/ld+json">
@@ -63,7 +65,7 @@
 
   <header class="site-header">
     <nav class="nav" aria-label="Κύρια πλοήγηση">
-      <a href="/" class="nav__logo" aria-label="Dr. Τουλής — Αρχική">
+      <a href="/" class="nav__logo">
         <img src="/assets/images/toulis-atoms.svg" alt="" class="nav__logo-mark" width="36" height="36" />
         <span>
           Dr. Τουλής
@@ -194,8 +196,7 @@
           <!-- Booking card -->
           <a class="practice-card practice-card--booking"
              href="https://appointment-booking.pages.dev"
-             target="_blank" rel="noopener"
-             aria-label="Κλείστε ραντεβού online">
+             target="_blank" rel="noopener">
             <svg class="practice-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
               <rect x="3" y="5" width="18" height="16" rx="2" />
               <path d="M3 9h18" />
@@ -218,8 +219,7 @@
           <!-- Map card -->
           <a class="practice-card"
              href="https://maps.app.goo.gl/9gK8A1xyBH3NCMpX8"
-             target="_blank" rel="noopener"
-             aria-label="Ανοίξτε τη διεύθυνση στο Google Maps">
+             target="_blank" rel="noopener">
             <svg class="practice-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
               <path d="M12 22s7-7.5 7-13a7 7 0 1 0-14 0c0 5.5 7 13 7 13Z" />
               <circle cx="12" cy="9" r="2.5" />
@@ -257,7 +257,7 @@
       <div>
         <!-- Original "Endocrine Consulting" lockup — kept as the homepage
              footer brand identity for continuity with the previous site. -->
-        <a href="/" class="footer-brand" aria-label="Dr. Τουλής — Αρχική">
+        <a href="/" class="footer-brand">
           <img src="/assets/images/logo-circle.png"
                alt="Dr. Κωνσταντίνος Α. Τουλής — Endocrine Consulting"
                class="footer-brand__img"
@@ -267,7 +267,7 @@
         <p class="footer__tag">Ιδιωτικό ιατρείο, Θεσσαλονίκη.</p>
       </div>
       <nav aria-label="Περιεχόμενο">
-        <h4>Περιεχόμενο</h4>
+        <h3>Περιεχόμενο</h3>
         <ul>
           <li><a href="/biography/">Βιογραφικό</a></li>
           <li><a href="/services/">Υπηρεσίες</a></li>
@@ -276,7 +276,7 @@
         </ul>
       </nav>
       <nav aria-label="Ιατρείο">
-        <h4>Ιατρείο</h4>
+        <h3>Ιατρείο</h3>
         <ul>
           <li>Μητροπόλεως 73</li>
           <li><a href="tel:+302310222799">2310 222 799</a></li>
@@ -284,7 +284,7 @@
         </ul>
       </nav>
       <nav aria-label="Ακαδημαϊκό">
-        <h4>Ακαδημαϊκό</h4>
+        <h3>Ακαδημαϊκό</h3>
         <ul>
           <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=toulis+k&amp;sort=pubdate" target="_blank" rel="noopener">PubMed →</a></li>
           <li><a href="https://scholar.google.com/citations?hl=en&amp;user=qf2jNAgAAAAJ&amp;view_op=list_works" target="_blank" rel="noopener">Google Scholar →</a></li>

@@ -17,17 +17,19 @@
   <link rel="icon" href="/assets/images/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/toulis_favicon-32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
-  <link rel="stylesheet" href="/assets/css/fonts.css" />
-  <link rel="stylesheet" href="/assets/css/tokens.css" />
-  <link rel="stylesheet" href="/assets/css/globals.css" />
-  <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/source-serif-4-500-greek.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-400-greek.woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/fonts.min.css" />
+  <link rel="stylesheet" href="/assets/css/tokens.min.css" />
+  <link rel="stylesheet" href="/assets/css/globals.min.css" />
+  <link rel="stylesheet" href="/assets/css/components.min.css" />
 </head>
 <body>
   <a href="#main" class="skip-link">Μετάβαση στο κύριο περιεχόμενο</a>
 
   <header class="site-header">
     <nav class="nav" aria-label="Κύρια πλοήγηση">
-      <a href="/" class="nav__logo" aria-label="Dr. Τουλής — Αρχική">
+      <a href="/" class="nav__logo">
         <img src="/assets/images/toulis-atoms.svg" alt="" class="nav__logo-mark" width="36" height="36" />
         <span>Dr. Τουλής<small>Ενδοκρινολόγος · Διαβητολόγος</small></span>
       </a>
@@ -106,7 +108,7 @@
         <p class="footer__tag">Ιδιωτικό ιατρείο, Θεσσαλονίκη.</p>
       </div>
       <nav aria-label="Περιεχόμενο">
-        <h4>Περιεχόμενο</h4>
+        <h3>Περιεχόμενο</h3>
         <ul>
           <li><a href="/biography/">Βιογραφικό</a></li>
           <li><a href="/services/">Υπηρεσίες</a></li>
@@ -115,7 +117,7 @@
         </ul>
       </nav>
       <nav aria-label="Ιατρείο">
-        <h4>Ιατρείο</h4>
+        <h3>Ιατρείο</h3>
         <ul>
           <li>Μητροπόλεως 73</li>
           <li><a href="tel:+302310222799">2310 222 799</a></li>
@@ -123,7 +125,7 @@
         </ul>
       </nav>
       <nav aria-label="Ακαδημαϊκό">
-        <h4>Ακαδημαϊκό</h4>
+        <h3>Ακαδημαϊκό</h3>
         <ul>
           <li><a href="https://pubmed.ncbi.nlm.nih.gov/?term=toulis+k&amp;sort=pubdate" target="_blank" rel="noopener">PubMed →</a></li>
           <li><a href="https://scholar.google.com/citations?hl=en&amp;user=qf2jNAgAAAAJ&amp;view_op=list_works" target="_blank" rel="noopener">Google Scholar →</a></li>
