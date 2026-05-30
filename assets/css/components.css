@@ -376,6 +376,22 @@
   gap: var(--sp-2);
   margin-top: var(--sp-2);
 }
+/* Booking card's CTA is the primary booking action on the page — promote
+   it from text link to a filled deep-green button. Sage stays a rare
+   surface; deep green stays the action color across the site. */
+.practice-card--booking .practice-card__cta {
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: var(--r-pill);
+  margin-top: var(--sp-4);
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+.practice-card--booking:hover .practice-card__cta,
+.practice-card--booking:focus-visible .practice-card__cta {
+  background: var(--accent-dark);
+  transform: translateX(2px);
+}
 
 .practice__meta {
   display: grid;
@@ -437,9 +453,7 @@
 .bio-hero__title {
   font-size: clamp(40px, 5.4vw, 64px);
   line-height: 1.02;
-  /* sp-10 (40px) bottom margin gives the lede real breathing room from the H1.
-     The previous rule used var(--sp-7) which is not defined in tokens — it
-     resolved to 0 and left the lede pressed against the headline. */
+  /* sp-10 (40px) bottom margin gives the lede real breathing room from the H1. */
   margin: var(--sp-5) 0 var(--sp-10);
 }
 .bio-hero__accent {

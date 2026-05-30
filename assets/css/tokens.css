@@ -8,6 +8,9 @@
   /* ── Ink (text) ── */
   --ink:        #1a1f24;   /* body text, headlines */
   --ink-2:      #3b4550;   /* secondary prose */
+  --ink-3:      var(--muted);  /* alias — secondary metadata; kept as a
+                                  semantic hook for components that read
+                                  as "tertiary ink" rather than "muted" */
   --muted:      #5e6873;   /* metadata, eyebrows — WCAG 2.2 AA-tuned */
 
   /* ── Paper (backgrounds) ── */
@@ -56,7 +59,9 @@
   --sp-4:  16px;
   --sp-5:  20px;
   --sp-6:  24px;
+  --sp-7:  28px;
   --sp-8:  32px;
+  --sp-9:  36px;
   --sp-10: 40px;
   --sp-12: 48px;
   --sp-16: 64px;
