@@ -88,17 +88,17 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-/* Both availability lines share a common left edge via an inline-flex
-   column wrapper. The wrapper itself sits centered inside .hero__inner
-   (which is text-align: center), so the block stays balanced on the
-   page while the bullets line up internally. */
+/* Both availability lines stack in an inline-flex column centered inside
+   .hero__inner. The first line carries the green dot; the second drops
+   it (.hero__availability--plain) and is offset slightly to the right
+   so its text optically lines up with the first line's text — not the
+   dot — when both are centered on the page. */
 .hero__availability-group {
   display: inline-flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-top: var(--sp-8);
-  gap: var(--sp-2);
-  text-align: left;
+  gap: var(--sp-1);
 }
 .hero__availability {
   margin: 0;
