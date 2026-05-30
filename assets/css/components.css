@@ -50,7 +50,7 @@
      surrounding paragraph isn't perturbed by the taller glyph. */
   font-style: italic;
   color: var(--accent);
-  font-size: 1.35em;
+  font-size: 1.5em;
   line-height: 1;
   vertical-align: -0.04em;
 }
