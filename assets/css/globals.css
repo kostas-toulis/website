@@ -190,9 +190,97 @@ button:focus-visible,
 .nav__cta::after { content: "→"; }
 .nav__cta:hover { background: var(--accent-dark); }
 
+/* CSS-only hamburger: hidden checkbox toggles a sibling-controlled panel.
+   Desktop default: checkbox + label are hidden, .nav__links is the
+   horizontal menu. */
+.nav__toggle {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.nav__hamburger { display: none; }
+
 @media (max-width: 768px) {
-  .nav { padding: var(--sp-4) var(--sp-5); gap: var(--sp-3); }
-  .nav__links { display: none; } /* hamburger TODO */
+  /* Layout: logo (left) → spacer → hamburger → CTA. Wraps to a new row
+     when the panel opens so the menu lives below the header bar. */
+  .nav {
+    flex-wrap: wrap;
+    gap: var(--sp-3);
+    padding: var(--sp-4) var(--sp-5);
+    position: relative;
+  }
+  .nav__logo { margin-right: auto; }
+  .nav__logo small { display: none; }   /* drop the specialty subline on mobile */
+
+  /* Hamburger button */
+  .nav__hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    cursor: pointer;
+    padding: 0;
+  }
+  .nav__hamburger-bar {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 1px;
+    transition: transform 220ms ease, opacity 180ms ease;
+    transform-origin: center;
+  }
+  .nav__toggle:focus-visible + .nav__hamburger {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+    border-radius: 4px;
+  }
+
+  /* Closed: hide links + lang */
+  .nav__links,
+  .nav__lang { display: none; }
+
+  /* Open (:checked) — drop-down panel below the header bar.
+     flex-basis: 100% forces a new wrap row inside the .nav flex. */
+  .nav__toggle:checked ~ .nav__links {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin: var(--sp-3) 0 0;
+    padding: var(--sp-3) 0 0;
+    border-top: 1px solid var(--line);
+    gap: 0;
+  }
+  .nav__toggle:checked ~ .nav__links li {
+    border-bottom: 1px dashed var(--line);
+  }
+  .nav__toggle:checked ~ .nav__links li:last-child { border-bottom: 0; }
+  .nav__toggle:checked ~ .nav__links a {
+    display: block;
+    padding: var(--sp-3) 0;
+    font-size: 16px;
+  }
+  .nav__toggle:checked ~ .nav__lang {
+    display: inline-block;
+    flex-basis: 100%;
+    margin-top: var(--sp-3);
+    padding-top: var(--sp-3);
+    border-top: 1px dashed var(--line);
+  }
+
+  /* Bars → X when checked */
+  .nav__toggle:checked + .nav__hamburger .nav__hamburger-bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .nav__toggle:checked + .nav__hamburger .nav__hamburger-bar:nth-child(2) {
+    opacity: 0;
+  }
+  .nav__toggle:checked + .nav__hamburger .nav__hamburger-bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
 }
 
 /* --- Footer (palette + layout from handoff mockup) --- */
