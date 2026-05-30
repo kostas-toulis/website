@@ -43,12 +43,16 @@
 .hero__em {
   /* In-prose emphasis: italic serif accent — mirrors the styling of the
      <em> in the tease title («Πεδία κλινικής εφαρμογής»). Asymmetric
-     +1.18em size bump on the marked word only; the following noun keeps
-     the base hero__sub size so the asymmetry reads as deliberate
-     editorial emphasis rather than uniform headline. */
+     +35% size on the marked word only; the following noun keeps the
+     base hero__sub size so the asymmetry reads as deliberate editorial
+     emphasis rather than a uniform headline. The em is set inline-block
+     with a small negative vertical alignment so the line-height of the
+     surrounding paragraph isn't perturbed by the taller glyph. */
   font-style: italic;
   color: var(--accent);
-  font-size: 1.18em;
+  font-size: 1.35em;
+  line-height: 1;
+  vertical-align: -0.04em;
 }
 .hero__actions {
   display: flex;

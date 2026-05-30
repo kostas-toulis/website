@@ -307,33 +307,32 @@ button:focus-visible,
 }
 
 /* Footer brand — homepage only. Original "Endocrine Consulting" lockup,
-   tight-cropped to its natural 2.4:1 wordmark proportions (logo-pill.png)
-   and framed in a horizontal cream-paper pill. Respects the asset's
-   actual aspect rather than forcing a circular crop; reads as
-   letterhead against the dark ink footer. */
+   tight-cropped from logo-circle.png with TRUE transparency (no
+   cream-paper composite — that's what was creating the "white rectangle
+   inside a cream pill" earlier). The wordmark now floats directly on
+   the dark ink footer; the green/teal/gray colors pop against the
+   dark ground and integrate visually with the surrounding footer text
+   tone. */
 .footer-brand-col {
   text-align: center;
 }
 .footer-brand-col .footer__tag {
   max-width: none;
-  margin: var(--sp-5) auto 0;
+  margin: var(--sp-4) auto 0;
   font-size: 13px;
 }
 .footer-brand {
   display: inline-block;
-  background: #fcfbf7;
-  padding: 10px 18px;
-  border-radius: 999px;        /* pill */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.14);
   line-height: 0;
-  width: 220px;
-  height: 92px;
-  transition: transform 220ms ease, box-shadow 220ms ease;
+  width: 180px;
+  height: 72px;
+  transition: transform 220ms ease, opacity 220ms ease;
+  opacity: 0.92;
 }
 .footer-brand:hover,
 .footer-brand:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.20);
+  transform: translateY(-1px);
+  opacity: 1;
 }
 .footer-brand__img {
   width: 100%;
