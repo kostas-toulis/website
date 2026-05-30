@@ -306,13 +306,12 @@ button:focus-visible,
   max-width: 260px;
 }
 
-/* Footer brand — homepage only. Original "Endocrine Consulting" lockup,
+/* Footer brand — site-wide. Original "Endocrine Consulting" lockup,
    tight-cropped from logo-circle.png with TRUE transparency (no
    cream-paper composite — that's what was creating the "white rectangle
-   inside a cream pill" earlier). The wordmark now floats directly on
-   the dark ink footer; the green/teal/gray colors pop against the
-   dark ground and integrate visually with the surrounding footer text
-   tone. */
+   inside a cream pill" earlier). The wordmark floats directly on the
+   dark ink footer; the green/teal/gray colors integrate naturally with
+   the surrounding footer text tone (#cfc9b9 family). */
 .footer-brand-col {
   text-align: center;
 }
