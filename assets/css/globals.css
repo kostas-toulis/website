@@ -218,20 +218,32 @@ button:focus-visible,
   max-width: 260px;
 }
 
-/* Footer brand — homepage only. The original "Endocrine Consulting" lockup
-   (logo-circle.png) lives inside the first grid column at the same level as
-   the other footer columns. The asset is on a white ground, so we frame it
-   in a small cream-paper card that reads as intentional letterhead against
-   the dark ink footer rather than a stray white rectangle. */
+/* Footer brand — homepage only. Original "Endocrine Consulting" lockup
+   (logo-circle.png) lives inside the first grid column at the same level
+   as the other footer columns. The asset is on a white ground; we frame
+   it as a circular cream-paper "stamp" centered above the tagline. */
+.footer-brand-col {
+  text-align: center;
+}
+.footer-brand-col .footer__tag {
+  margin-inline: auto;
+  margin-top: var(--sp-4);
+}
 .footer-brand {
   display: inline-block;
   background: #fcfbf7;
-  padding: 10px;
-  border-radius: 12px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22);
+  padding: 14px;
+  border-radius: 50%;          /* circular badge */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.28);
   line-height: 0;
-  width: 96px;
-  height: 96px;
+  width: 116px;
+  height: 116px;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.footer-brand:hover,
+.footer-brand:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.32);
 }
 .footer-brand__img {
   width: 100%;

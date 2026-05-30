@@ -40,6 +40,12 @@
   max-width: 54ch;
   margin: 0 auto var(--sp-10);
 }
+.hero__em {
+  /* In-prose emphasis: italic serif accent — mirrors the styling of the
+     <em> in the tease title («Πεδία κλινικής εφαρμογής»). */
+  font-style: italic;
+  color: var(--accent);
+}
 .hero__actions {
   display: flex;
   gap: var(--sp-3);
@@ -159,8 +165,8 @@
 }
 .cred-pill {
   font-family: var(--font-mono);
-  font-size: 11px;
-  padding: 3px 8px;
+  font-size: 13px;
+  padding: 4px 10px;
   border-radius: 5px;
   background: var(--paper-2);
   color: var(--ink-2);
@@ -395,6 +401,11 @@
   font-size: 16px;
   color: var(--ink);
   line-height: 1.5;
+}
+.meta-card__tail {
+  /* «(κατόπιν ραντεβού)» parenthetical: softer, smaller, secondary tone. */
+  color: var(--muted);
+  font-size: 13.5px;
 }
 .meta-card__link {
   font-size: 16px;
@@ -904,22 +915,25 @@
   max-width: 38ch;
 }
 
-/* --- Cutting-edge tech link — editorial pull-block ----------------------- */
+/* --- Parallel digital services link — editorial pull-block -------------- */
 .svc-tech-link {
   display: block;
   margin: var(--sp-12) auto 0;
   max-width: 560px;
-  padding: var(--sp-8) var(--sp-6) var(--sp-7);
+  padding: var(--sp-8) var(--sp-7) var(--sp-7);
   text-align: center;
   text-decoration: none;
   color: inherit;
-  border-top: 1px dashed var(--line);
-  border-bottom: 1px dashed var(--line);
-  transition: background-color .25s ease;
+  background: var(--accent-soft);   /* sage tint — distinct from page bg */
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: background-color .25s ease, transform .25s ease;
 }
 .svc-tech-link:hover,
 .svc-tech-link:focus-visible {
-  background-color: var(--paper-2);
+  background-color: var(--accent-sage);
+  transform: translateY(-1px);
 }
 .svc-tech-link:focus-visible {
   outline: 2px solid var(--accent);
