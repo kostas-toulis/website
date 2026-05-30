@@ -26,7 +26,7 @@
   margin-top: var(--sp-6);
   /* Hero-only emphasis: deep accent green + slightly wider tracking on Greek caps */
   color: var(--accent);
-  letter-spacing: 0.20em;
+  letter-spacing: 0.18em;
 }
 .hero__title {
   margin: var(--sp-6) 0;
