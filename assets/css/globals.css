@@ -165,16 +165,6 @@ button:focus-visible,
 .nav__links a { transition: color 150ms; }
 .nav__links a:hover,
 .nav__links a[aria-current="page"] { color: var(--accent); }
-.nav__lang {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  padding: 4px 10px;
-  border-radius: var(--r-chip);
-  border: 1px solid var(--line-dash);
-  color: var(--muted);
-  letter-spacing: 0.04em;
-}
-.nav__lang b { color: var(--ink); }
 .nav__cta {
   background: var(--accent);
   color: #fff;
@@ -239,9 +229,8 @@ button:focus-visible,
     border-radius: 4px;
   }
 
-  /* Closed: hide links + lang */
-  .nav__links,
-  .nav__lang { display: none; }
+  /* Closed: hide links */
+  .nav__links { display: none; }
 
   /* Open (:checked) — drop-down panel below the header bar.
      flex-basis: 100% forces a new wrap row inside the .nav flex. */
@@ -262,13 +251,6 @@ button:focus-visible,
     display: block;
     padding: var(--sp-3) 0;
     font-size: 16px;
-  }
-  .nav__toggle:checked ~ .nav__lang {
-    display: inline-block;
-    flex-basis: 100%;
-    margin-top: var(--sp-3);
-    padding-top: var(--sp-3);
-    border-top: 1px dashed var(--line);
   }
 
   /* Bars → X when checked */
