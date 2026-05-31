@@ -24,8 +24,8 @@
 }
 .hero__flank--l { left:  clamp(var(--sp-6), 6vw, 120px); }
 .hero__flank--r { right: clamp(var(--sp-6), 6vw, 120px); }
-.hero__flank-atoms  { width: 96px;  height: 96px; }
-.hero__flank-legacy { width: 150px; height: auto; }
+.hero__flank-atoms  { width: 94px;  height: 94px; }
+.hero__flank-legacy { width: 135px; height: auto; }
 
 /* Mobile fallback: single centred atoms mark above the rule. */
 .hero__flank-mobile { display: none; }
