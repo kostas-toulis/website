@@ -13,30 +13,26 @@
 }
 
 /* Heritage flanks at the eyebrow band — desktop only.
-   Green atoms (left) + Endocrine Consulting lockup (right) sit absolutely
-   positioned, level with the eyebrow line, well outside the centered
-   .hero__inner column so they don't compete with the headline. */
+   Green atoms (left) + Endocrine Consulting lockup (right), centred on a
+   shared line and weight-matched so they read as a deliberate pair. */
 .hero__flank {
   position: absolute;
-  top: var(--sp-20);
+  top: 120px;
+  transform: translateY(-50%);   /* centre on the eyebrow line, not top-pinned */
   z-index: 1;
   pointer-events: none;
 }
 .hero__flank--l { left:  clamp(var(--sp-6), 6vw, 120px); }
 .hero__flank--r { right: clamp(var(--sp-6), 6vw, 120px); }
-.hero__flank-atoms  { width: 92px;  height: 92px; }
-.hero__flank-legacy { width: 116px; height: auto; }
+.hero__flank-atoms  { width: 96px;  height: 96px; }
+.hero__flank-legacy { width: 150px; height: auto; }
 
-/* Mobile fallback: a single centered atoms mark above the rule.
-   Hidden on desktop, swapped in when the flank pair is dropped. */
+/* Mobile fallback: single centred atoms mark above the rule. */
 .hero__flank-mobile { display: none; }
 
 @media (max-width: 1100px) {
   .hero__flank { display: none; }
-  .hero__flank-mobile {
-    display: block;
-    margin: 0 auto var(--sp-5);
-  }
+  .hero__flank-mobile { display: block; margin: 0 auto var(--sp-5); }
 }
 .hero__inner {
   max-width: 820px;
