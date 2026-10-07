@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="google-site-verification" content="i_T2_HJzKB1rtnhogPII3BjfGcan-4gsO_Sw3jSdMsA" />
-  <title>Dr. Κωνσταντίνος Α. Τουλής — Ενδοκρινολόγος · Θεσσαλονίκη</title>
+  <title>Ενδοκρινολόγος – Διαβητολόγος Θεσσαλονίκη · Dr. Κ. Α. Τουλής</title>
   <meta name="description" content="Εξειδικευμένη ενδοκρινολογική φροντίδα στη Θεσσαλονίκη. Θυρεοειδής, διαβήτης, οστεοπόρωση, PCOS. Ιατρείο: Μητροπόλεως 73. Online ραντεβού." />
 
   <link rel="canonical" href="https://www.toulis.gr/" />
@@ -32,18 +32,26 @@
   <link rel="stylesheet" href="/assets/css/globals.min.css" />
   <link rel="stylesheet" href="/assets/css/components.min.css" />
 
-  <!-- Physician schema — homepage only -->
+  <!-- Practice schema (same @id on /contact/) — tied to Google Business Profile via hasMap/sameAs -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Physician",
+    "@id": "https://www.toulis.gr/#practice",
     "name": "Dr. Κωνσταντίνος Α. Τουλής",
-    "alternateName": "Konstantinos A. Toulis",
-    "medicalSpecialty": ["Endocrine", "Diabetic"],
+    "alternateName": [
+      "Konstantinos A. Toulis",
+      "Dr. Κ.Α. Τουλής - Ενδοκρινολογία"
+    ],
+    "medicalSpecialty": [
+      "Endocrine",
+      "Diabetic"
+    ],
     "image": "https://www.toulis.gr/assets/images/portrait.jpg",
-    "url": "https://www.toulis.gr",
+    "url": "https://www.toulis.gr/",
     "telephone": "+30-2310-222799",
     "email": "info@toulis.gr",
+    "isAcceptingNewPatients": true,
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Μητροπόλεως 73",
@@ -51,11 +59,30 @@
       "postalCode": "546 22",
       "addressCountry": "GR"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.6310625,
+      "longitude": 22.9445103
+    },
+    "hasMap": "https://www.google.com/maps?cid=5587538242344689025",
+    "sameAs": [
+      "https://www.google.com/maps?cid=5587538242344689025"
+    ],
+    "areaServed": {
+      "@type": "City",
+      "name": "Θεσσαλονίκη"
+    },
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Thursday","Friday"],
-        "opens": "16:00", "closes": "20:30"
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "16:00",
+        "closes": "20:30"
       }
     ]
   }
